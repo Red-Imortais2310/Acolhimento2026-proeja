@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acolhimento Proeja - IFSP Cubatão</title>
+
+    <!-- Meta Tags para Compartilhamento (WhatsApp, Facebook, Instagram, LinkedIn) -->
+    <meta property="og:title" content="Acolhimento Proeja 2026 - IFSP Cubatão">
+    <meta property="og:description"
+        content="Venha celebrar conosco! Confira o convite, galeria de fotos e projetos dos alunos.">
+    <meta property="og:image" content="https://convite-proeja-2024.vercel.app/imagens/Ifsp_logo.jpg">
+    <meta property="og:url" content="https://convite-proeja-2024.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+
+    <!-- Meta Tags para Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Acolhimento Proeja 2026 - IFSP Cubatão">
+    <meta name="twitter:description"
+        content="Venha celebrar conosco! Confira o convite, galeria de fotos e projetos dos alunos.">
+    <meta name="twitter:image" content="https://convite-proeja-2024.vercel.app/imagens/Ifsp_logo.jpg">
+
+    <!-- Meta Tags adicionais para SEO -->
+    <meta name="description"
+        content="Venha celebrar conosco! Confira o convite, galeria de fotos e projetos dos alunos.">
+    <meta name="keywords" content="Proeja, IFSP, Cubatão, Acolhimento, 2026">
+    <meta name="author" content="IFSP Cubatão">
+
+    <!-- Favicon (opcional) -->
+    <link rel="icon" type="image/jpeg" href="imagens/Ifsp_logo.jpg">
+
+    <!-- CSS e Fontes -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="imagens/Ifsp_logo.jpg" alt="IFSP Logo">
+                <div class="logo-text">
+                    <h1>Proeja</h1>
+                    <span>IFSP Cubatão</span>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#evento" class="nav-link">Evento</a>
+                <a href="#galeria-eventos" class="nav-link">Galeria de Eventos</a>
+                <a href="#galeria-eventos 2" class="nav-link">Galeria de Eventos 2</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <!-- Menu Mobile -->
+            <button class="mobile-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-carousel">
+            <img src="imagens/Campus1.jpg" alt="Campus 1" class="bg-slide active">
+            <img src="imagens/campus2.jpeg" alt="Campus 2" class="bg-slide">
+            <img src="imagens/campus3.jpg" alt="Campus 3" class="bg-slide">
+        </div>
+        <div class="glass-overlay"></div>
+        <img src="imagens/logoconvite1.png" alt="Logo Convite Esquerda" class="hero-image-left">
+        <div class="hero-content">
+            <h1>Acolhimento Proeja 2026</h1>
+            <h2>1º 2º e 3º Ano - IFSP Campus Cubatão</h2>
+            <p>Celebrando nossa jornada educacional com alegria e união.</p>
+            <button class="cta-button" onclick="scrollToSection('evento')">Saiba Mais</button>
+        </div>
+        <img src="imagens/Ifsp_logo.jpg" alt="Logo IFSP Direita" class="hero-image-right">
+    </section>
+
+    <!-- Evento Section -->
+    <section id="evento" class="evento">
+        <div class="container">
+            <h2>Sobre o Evento</h2>
+            <div class="evento-grid">
+                <div class="evento-card">
+                    <div class="card-icon">📅</div>
+                    <h3>Data e Horário</h3>
+                    <p>09 de fevereiro de 2026<br>Das 19h às 22h</p>
+                </div>
+                <div class="evento-card">
+                    <div class="card-icon">📍</div>
+                    <h3>Local</h3>
+                    <p>Auditório<br>IFSP Campus Cubatão</p>
+                </div>
+                <div class="evento-card">
+                    <div class="card-icon">🎉</div>
+                    <h3>Atividades</h3>
+                    <p>Apresentação dos alunos, comidas, bebidas e muito mais!</p>
+                </div>
+                <div class="evento-card" onclick="openParticipantesPopup()" style="cursor: pointer;">
+                    <div class="card-icon">👥</div>
+                    <h3>Participantes</h3>
+                    <p>Diretores/Professores 1º, 2º e 3º ano<br>Proeja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="galeria-eventos" class="galeria">
+        <div class="container">
+            <h2>Eventos durante a ano de 2025</h2>
+            <p class="galeria-subtitle">Conheça os eventos que marcaram nosso ano letivo</p>
+
+            <div class="carousel-container" id="carousel-eventos">
+                <button class="carousel-btn prev">❮</button>
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack-eventos">
+                        <!-- Fotos dos eventos -->
+                        <div class="carousel-slide">
+                            <img src="imagens/OFICINA POEMA E LITERATURA.jpg" alt="OFICINA1">
+                            <h4>Oficina Poema e Literatura 2º Ano</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/ANIVERSARIO PROFESSOR LEANDRO.jpg" alt="aniversario">
+                            <h4>Aniversário do professor Leandro no 1ºAno</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/Docentes na oficina compostagem.jpg" alt="docentes">
+                            <h4>Docentes na oficina de compostagem</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/oficina compostagem.jpg" alt="OFICINA2">
+                            <h4>Oficina Compostagem 2ºAno</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/oficina poema 2.jpg" alt="OFICINA3">
+                            <h4>Oficina Poema e Literatura 2ºAno</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/arteterapia 2 ano.jpg" alt="arteterapia">
+                            <h4>Arteterapia 2ºAno</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/tecendo relações.jpg" alt="tecendo">
+                            <h4>Tecendo relações 2ºAno</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/Apresentação site 1 ano.jpg" alt="jornal">
+                            <h4>Apresentação Site Jornalístico 1º Ano</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/apresentação site 1 ano 2.jpg" alt="jornal2">
+                            <h4>Apresentação Site Jornalístico 1ºAno</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/arraia do saber.jpg" alt="arraia">
+                            <h4>Arraiá do Saber 1ºAno</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões.jpeg" alt="Evento 11">
+                            <h4>Trabalho sobre regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões1.jpeg" alt="Evento 12">
+                            <h4>Trabalho sobre regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões10.jpeg" alt="Evento 13">
+                            <h4>Trabalho regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Sarau.jpeg" alt="Evento 14">
+                            <h4>Sarau</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões2.jpeg" alt="Evento 15">
+                            <h4>Trabalho sobre regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões3.jpeg" alt="Evento 16">
+                            <h4>Trabalho sobre regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões5.jpeg" alt="Evento 17">
+                            <h4>Trabalho sobre regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões6.jpeg" alt="Evento 18">
+                            <h4>Trabalho sobre regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões7.jpeg" alt="Evento 19">
+                            <h4>Trabalho sobre regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões4.jpeg" alt="Evento 20">
+                            <h4>Trabalho sobre regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões8.jpeg" alt="Evento 21">
+                            <h4>Trabalho sobre regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Trabalho sobre regiões9.jpeg" alt="Evento 22">
+                            <h4>Trabalho sobre regiões</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Aniversário Jeanna1.jpeg" alt="Evento 23">
+                            <h4>Aniversário Jeanna</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Futebol2.jpeg" alt="Evento 24">
+                            <h4>Futebol</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens/imagens2/Futebol1.jpeg" alt="Evento 25">
+                            <h4>Futebol</h4>
+                        </div>
+                        <!-- NOVAS IMAGENS ADICIONADAS -->
+                        <div class="carousel-slide" onclick="openEventoPopup()" style="cursor: pointer;">
+                            <img src="imagens4/Captura de tela 2025-12-08 103804.png" alt="Evento 26">
+                            <h4>Trabalho : Desenvolvido um site sobre museu da Língua Portuguesa/Pinacoteca de SP</h4>
+                            <p style="font-size: 0.8rem; color: #3498db; margin-top: 5px; font-weight: 500;">
+                                <span style="font-size: 1rem;">👆</span> Clique para ver detalhes
+                            </p>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens4/WhatsApp Image 2025-12-06 at 10.06.57.jpeg" alt="Evento 27">
+                            <h4>Momentos de Aprendizado</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens4/WhatsApp Image 2025-12-06 at 12.20.10.jpeg" alt="Evento 28">
+                            <h4>Atividades Pedagógicas</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens4/WhatsApp Image 2025-12-06 at 12.20.12 (1).jpeg" alt="Evento 29">
+                            <h4>Trabalhos em Grupo</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens4/WhatsApp Image 2025-12-06 at 12.20.12.jpeg" alt="Evento 30">
+                            <h4>Projetos Educacionais</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens4/WhatsApp Image 2025-12-06 at 12.21.14.jpeg" alt="Evento 31">
+                            <h4>Atividades Práticas</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens4/WhatsApp Image 2025-12-06 at 12.21.15.jpeg" alt="Evento 32">
+                            <h4>Dinâmicas de Grupo</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens4/WhatsApp Image 2025-12-06 at 12.22.34.jpeg" alt="Evento 33">
+                            <h4>Momentos de Interação</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens4/WhatsApp Image 2025-12-06 at 12.33.24.jpeg" alt="Evento 34">
+                            <h4>Experiências Educativas</h4>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">❯</button>
+            </div>
+        </div>
+
+        <!-- Indicadores do carrossel -->
+        <div class="carousel-indicators" id="carouselIndicators-eventos"></div>
+        </div>
+    </section>
+    <br>
+    <section id="galeria-imagens2" class="galeria">
+        <div class="container">
+            <h2>Galeria de Imagens 2</h2>
+            <p class="galeria-subtitle">Mais momentos especiais do Proeja</p>
+
+            <div class="carousel-container" id="carousel-imagens2">
+                <button class="carousel-btn prev">❮</button>
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack-imagens2">
+                        <!-- Galeria 2 - 58 imagens -->
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.05.35 (1).jpeg" alt="Imagem 1">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.05.35.jpeg" alt="Imagem 2">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.05.53.jpeg" alt="Imagem 3">
+                            <h4>Proeja 2025</h4>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.29 (1).jpeg" alt="Imagem 5">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.29 (2).jpeg" alt="Imagem 6">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.29 (3).jpeg" alt="Imagem 7">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.29.jpeg" alt="Imagem 8">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.30 (1).jpeg" alt="Imagem 9">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.30 (2).jpeg" alt="Imagem 10">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.30 (3).jpeg" alt="Imagem 11">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.30 (4).jpeg" alt="Imagem 12">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.30.jpeg" alt="Imagem 13">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.31 (1).jpeg" alt="Imagem 14">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.31 (2).jpeg" alt="Imagem 15">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.31 (3).jpeg" alt="Imagem 16">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.31 (4).jpeg" alt="Imagem 17">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.31.jpeg" alt="Imagem 18">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.32 (1).jpeg" alt="Imagem 19">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.32 (2).jpeg" alt="Imagem 20">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.32 (3).jpeg" alt="Imagem 21">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.32 (4).jpeg" alt="Imagem 22">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.32 (5).jpeg" alt="Imagem 23">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.32.jpeg" alt="Imagem 24">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.33 (1).jpeg" alt="Imagem 25">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.33 (2).jpeg" alt="Imagem 26">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.33 (3).jpeg" alt="Imagem 27">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.33 (4).jpeg" alt="Imagem 28">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.33 (5).jpeg" alt="Imagem 29">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.33.jpeg" alt="Imagem 30">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.34 (1).jpeg" alt="Imagem 31">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.34 (2).jpeg" alt="Imagem 32">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.34 (3).jpeg" alt="Imagem 33">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.34 (4).jpeg" alt="Imagem 34">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.34 (5).jpeg" alt="Imagem 35">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.34.jpeg" alt="Imagem 36">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.35 (1).jpeg" alt="Imagem 37">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.35.jpeg" alt="Imagem 38">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.36 (1).jpeg" alt="Imagem 39">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.36 (2).jpeg" alt="Imagem 40">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.36 (3).jpeg" alt="Imagem 41">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.36 (4).jpeg" alt="Imagem 42">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.36.jpeg" alt="Imagem 43">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.37 (1).jpeg" alt="Imagem 44">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.37 (2).jpeg" alt="Imagem 45">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.37 (3).jpeg" alt="Imagem 46">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.37 (4).jpeg" alt="Imagem 47">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.37 (5).jpeg" alt="Imagem 48">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.37.jpeg" alt="Imagem 49">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.38 (1).jpeg" alt="Imagem 50">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.38 (2).jpeg" alt="Imagem 51">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.38 (3).jpeg" alt="Imagem 52">
+                            <h4>Proeja 2025</h4>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.39 (1).jpeg" alt="Imagem 54">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.39 (2).jpeg" alt="Imagem 55">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.39 (3).jpeg" alt="Imagem 56">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image 2025-12-04 at 22.06.39.jpeg" alt="Imagem 57">
+                            <h4>Proeja 2025</h4>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <img src="imagens3/WhatsApp Image1.jpeg" alt="Imagem 59">
+                            <h4>Proeja 2025</h4>
+                        </div>
+                        <div class="carousel-slide" onclick="openConemacPopup()" style="cursor: pointer;">
+                            <img src="imagens3/WhatsApp Image2.jpeg" alt="Imagem 60">
+                            <h4>CONEMAC 2025: Polígonos da Língua</h4>
+                            <p style="font-size: 0.8rem; color: #3498db; margin-top: 5px; font-weight: 500;">
+                                <span style="font-size: 1rem;">👆</span> Clique para ver detalhes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">❯</button>
+            </div>
+            <!-- Indicadores do carrossel -->
+            <div class="carousel-indicators" id="carouselIndicators-imagens2"></div>
+        </div>
+    </section>
+
+    <!-- Popup Galeria de Professores -->
+    <div id="participantesPopup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closeParticipantesPopup()">&times;</span>
+            <h2>Nossos Professores e Diretores</h2>
+            <div class="professores-grid">
+                <!-- Professores Atuais (10) -->
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/fernando.gif" alt="Fernando" id="img-prof-1">
+                    </div>
+                    <h3>Fernando</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/giovanne.gif" alt="Giovanne" id="img-prof-2">
+                    </div>
+                    <h3>Giovanne Marçal</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/Ivaldo_Informática.jpeg" alt="Ivaldo" id="img-prof-3">
+                    </div>
+                    <h3>Ivaldo Marques</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Nelson.jpeg" alt="Professor" id="img-prof-4">
+                    </div>
+                    <h3>Nelson</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/Jeanna_Matemática.png" alt="Jeanna" id="img-prof-5">
+                    </div>
+                    <h3>Jeanna</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/leandro.gif" alt="Leandro Campelo" id="img-prof-6">
+                    </div>
+                    <h3>Leandro Campelo</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/paulo.gif" alt="Paulo Manini" id="img-prof-7">
+                    </div>
+                    <h3>Paulo Manini</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/ricardo.gif" alt="Ricardo Sorgon" id="img-prof-8">
+                    </div>
+                    <h3>Ricardo Sorgon</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/rita.gif" alt="Rita Demarchi" id="img-prof-9">
+                    </div>
+                    <h3>Rita Demarchi</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/Sérgio_Inglês.png" alt="Sérgio" id="img-prof-10">
+                    </div>
+                    <h3>Sérgio</h3>
+                </div>
+
+                <!-- Novos Espaços (6 adicionais) -->
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Aline Maria dos Santos Teixeira.gif" alt="Professor"
+                            id="img-prof-11">
+                    </div>
+                    <h3>Aline Maria </h3>
+                </div>
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Antonio Mendes de Oliveira Neto.gif" alt="Professor"
+                            id="img-prof-12">
+                    </div>
+                    <h3>Antonio Mendes de Oliveira Neto</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Elifas Levi da Silva.gif" alt="Professor" id="img-prof-13">
+                    </div>
+                    <h3>Elifas Levi da Silva</h3>
+                </div>
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Natália Salan Marpica.gif" alt="Professor" id="img-prof-14">
+                    </div>
+                    <h3>Natália Salan Marpica</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Thiago Silva Augusto da fonseca.gif" alt="Professor"
+                            id="img-prof-15">
+                    </div>
+                    <h3>Thiago Silva Augusto da Fonseca</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens//imagens2/Artarxerxes Tiago Tácito - Copia.jpeg" alt="Professor"
+                            id="img-prof-16">
+                    </div>
+                    <h3>Diretor de Ensino</h3>
+                </div>
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Cláudia Cristina - Copia.jpeg" alt="Professor" id="img-prof-16">
+                    </div>
+                    <h3>Cláudia Cristina</h3>
+                </div>
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Leticia Vieira - Copia.jpeg" alt="Professor" id="img-prof-16">
+                    </div>
+                    <h3>Leticia Vieira</h3>
+                </div>
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Michelli Analy - Copia.jpeg" alt="Professor" id="img-prof-17">
+                    </div>
+                    <h3>Michelli Analy</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <button class="carousel-btn next">❯</button>
+    </div>
+    <!-- Indicadores do carrossel -->
+    <div class="carousel-indicators" id="carouselIndicators-eventos"></div>
+    </div>
+    </section>
+
+    <!-- Popup Galeria de Professores -->
+    <div id="participantesPopup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closeParticipantesPopup()">&times;</span>
+            <h2>Nossos Professores e Diretores</h2>
+            <div class="professores-grid">
+                <!-- Professores Atuais (10) -->
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/fernando.gif" alt="Fernando" id="img-prof-1">
+                    </div>
+                    <h3>Fernando</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/giovanne.gif" alt="Giovanne" id="img-prof-2">
+                    </div>
+                    <h3>Giovanne Marçal</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/Ivaldo_Informática.jpeg" alt="Ivaldo" id="img-prof-3">
+                    </div>
+                    <h3>Ivaldo Marques</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/Nelson.jpeg" alt="Professor" id="img-prof-4">
+                    </div>
+                    <h3>Nelson</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/Jeanna_Matemática.png" alt="Jeanna" id="img-prof-5">
+                    </div>
+                    <h3>Jeanna</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/leandro.gif" alt="Leandro Campelo" id="img-prof-6">
+                    </div>
+                    <h3>Leandro Campelo</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/paulo.gif" alt="Paulo Manini" id="img-prof-7">
+                    </div>
+                    <h3>Paulo Manini</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/ricardo.gif" alt="Ricardo Sorgon" id="img-prof-8">
+                    </div>
+                    <h3>Ricardo Sorgon</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/rita.gif" alt="Rita Demarchi" id="img-prof-9">
+                    </div>
+                    <h3>Rita Demarchi</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/Sérgio_Inglês.png" alt="Sérgio" id="img-prof-10">
+                    </div>
+                    <h3>Sérgio</h3>
+                </div>
+
+                <!-- Novos Espaços (6 adicionais) -->
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Aline Maria dos Santos Teixeira.gif" alt="Professor"
+                            id="img-prof-11">
+                    </div>
+                    <h3>Aline Maria </h3>
+                </div>
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Antonio Mendes de Oliveira Neto.gif" alt="Professor"
+                            id="img-prof-12">
+                    </div>
+                    <h3>Antonio Mendes de Oliveira Neto</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Elifas Levi da Silva.gif" alt="Professor" id="img-prof-13">
+                    </div>
+                    <h3>Elifas Levi da Silva</h3>
+                </div>
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Natália Salan Marpica.gif" alt="Professor" id="img-prof-14">
+                    </div>
+                    <h3>Natália Salan Marpica</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Thiago Silva Augusto da fonseca.gif" alt="Professor"
+                            id="img-prof-15">
+                    </div>
+                    <h3>Thiago Silva Augusto da Fonseca</h3>
+                </div>
+
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens//imagens2/Artarxerxes Tiago Tácito - Copia.jpeg" alt="Professor"
+                            id="img-prof-16">
+                    </div>
+                    <h3>diretotoria de ensino</h3>
+                </div>
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Cláudia Cristina - Copia.jpeg" alt="Professor" id="img-prof-16">
+                    </div>
+                    <h3>Cláudia Cristina</h3>
+                </div>
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Leticia Vieira - Copia.jpeg" alt="Professor" id="img-prof-16">
+                    </div>
+                    <h3>Leticia Vieira</h3>
+                </div>
+                <div class="professor-card" onclick="selectProfessor(this)">
+                    <div class="professor-image">
+                        <img src="imagens/imagens2/Michelli Analy - Copia.jpeg" alt="Professor" id="img-prof-16">
+                    </div>
+                    <h3>Michelli Analy</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup CONEMAC -->
+    <div id="conemacPopup" class="popup-overlay" onclick="if(event.target === this) closeConemacPopup()">
+        <div class="popup-content" style="max-width: 800px; width: 90%;">
+            <span class="popup-close" onclick="closeConemacPopup()">&times;</span>
+            <h2 style="color: #2c3e50; margin-bottom: 20px;">CONEMAC 2025: Polígonos da Língua</h2>
+
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <img src="imagens3/WhatsApp Image2.jpeg" alt="Obra CONEMAC"
+                    style="max-width: 100%; max-height: 400px; object-fit: contain; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+
+                <div
+                    style="font-size: 1rem; line-height: 1.6; color: #333; text-align: left; background: #f8f9fa; padding: 20px; border-radius: 10px; width: 100%;">
+                    <p style="margin-bottom: 10px;"><strong>👥 Artistas:</strong> Patrícia Tavares (Discente), Rogeria
+                        Sena (Discente) e Jeanna Oliveira (Orientadora)</p>
+                    <p style="margin-bottom: 10px;"><strong>📚 Turmas:</strong> 1º e 2º anos - PROEJA</p>
+                    <p style="margin-bottom: 10px;"><strong>🎨 Título da Obra:</strong> Polígonos da Língua - Um olhar
+                        PROEJA sobre a Geometria dos Museus da Língua Portuguesa e da Pinacoteca de São Paulo.</p>
+                    <p><strong>🛠️ Técnica utilizada:</strong> Fotografias, colagem e desenho.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br>
+    <section id="galeria-professores-1ano" class="galeria">
+        <div class="container">
+            <h2>Professores 1º Ano</h2>
+            <p class="galeria-subtitle">Docentes do Primeiro Ano</p>
+
+            <div class="carousel-container" id="carousel-professores-1">
+                <button class="carousel-btn prev">❮</button>
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack-professores-1">
+                        <!-- 9 Espaços para Professores 1º Ano -->
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Nelson Paz"
+                            data-lattes="#">
+                            <img src="imagens/Nelson.jpeg" alt="Nelson Paz" style="cursor: pointer;">
+                            <h4>Nelson Paz</h4>
+                            <p style="font-size: 0.9em; color: #666;">Arq. e Sist. Comp.</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Sergio Henrique"
+                            data-lattes="#">
+                            <img src="imagens/Sérgio_Inglês.png" alt="Sergio Henrique" style="cursor: pointer;">
+                            <h4>Sergio Henrique</h4>
+                            <p style="font-size: 0.9em; color: #666;">Inglês</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Fernando Dias"
+                            data-lattes="#">
+                            <img src="imagens/fernando.gif" alt="Fernando Dias" style="cursor: pointer;">
+                            <h4>Fernando Dias</h4>
+                            <p style="font-size: 0.9em; color: #666;">Educação Física</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Gabriel" data-lattes="#">
+                            <img src="imagens/Ifsp_logo.jpg" alt="Gabriel" style="cursor: pointer;">
+                            <h4>Gabriel</h4>
+                            <p style="font-size: 0.9em; color: #666;">Língua Portuguesa I</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Ricardo Sorgon"
+                            data-lattes="#">
+                            <img src="imagens/ricardo.gif" alt="Ricardo Sorgon" style="cursor: pointer;">
+                            <h4>Ricardo Sorgon</h4>
+                            <p style="font-size: 0.9em; color: #666;">História</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Leandro" data-lattes="#">
+                            <img src="imagens/leandro.gif" alt="Leandro" style="cursor: pointer;">
+                            <h4>Leandro</h4>
+                            <p style="font-size: 0.9em; color: #666;">Geografia</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Jeanna" data-lattes="#">
+                            <img src="imagens/Jeanna_Matemática.png" alt="Jeanna" style="cursor: pointer;">
+                            <h4>Jeanna</h4>
+                            <p style="font-size: 0.9em; color: #666;">Matemática I</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Coletto" data-lattes="#">
+                            <img src="imagens/Ifsp_logo.jpg" alt="Coletto" style="cursor: pointer;">
+                            <h4>Coletto</h4>
+                            <p style="font-size: 0.9em; color: #666;">Desenvolvimento Web</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Rita" data-lattes="#">
+                            <img src="imagens/rita.gif" alt="Rita" style="cursor: pointer;">
+                            <h4>Rita</h4>
+                            <p style="font-size: 0.9em; color: #666;">Artes</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">❯</button>
+            </div>
+            <div class="carousel-indicators" id="carouselIndicators-professores-1"></div>
+        </div>
+    </section>
+
+    <br>
+    <section id="galeria-professores-2ano" class="galeria">
+        <div class="container">
+            <h2>Professores 2º Ano</h2>
+            <p class="galeria-subtitle">Docentes do Segundo Ano</p>
+
+            <div class="carousel-container" id="carousel-professores-2">
+                <button class="carousel-btn prev">❮</button>
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack-professores-2">
+                        <!-- 9 Espaços para Professores 2º Ano -->
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Paula" data-lattes="#">
+                            <img src="imagens/Ifsp_logo.jpg" alt="Paula" style="cursor: pointer;">
+                            <h4>Paula</h4>
+                            <p style="font-size: 0.9em; color: #666;">Química</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Ivaldo Marques"
+                            data-lattes="#">
+                            <img src="imagens/Ivaldo_Informática.jpeg" alt="Ivaldo Marques" style="cursor: pointer;">
+                            <h4>Ivaldo Marques</h4>
+                            <p style="font-size: 0.9em; color: #666;">Banco de Dados</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Nelson Paz"
+                            data-lattes="#">
+                            <img src="imagens/Nelson.jpeg" alt="Nelson Paz" style="cursor: pointer;">
+                            <h4>Nelson Paz</h4>
+                            <p style="font-size: 0.9em; color: #666;">Engenharia de Software</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Novo Português"
+                            data-lattes="#">
+                            <img src="imagens/Ifsp_logo.jpg" alt="Novo Português" style="cursor: pointer;">
+                            <h4>Novo Português</h4>
+                            <p style="font-size: 0.9em; color: #666;">Português II</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Natália Salan"
+                            data-lattes="#">
+                            <img src="imagens/imagens2/Natália Salan Marpica.gif" alt="Natália Salan"
+                                style="cursor: pointer;">
+                            <h4>Natália Salan</h4>
+                            <p style="font-size: 0.9em; color: #666;">Sociologia</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Antonio Mendes"
+                            data-lattes="#">
+                            <img src="imagens/imagens2/Antonio Mendes de Oliveira Neto.gif" alt="Antonio Mendes"
+                                style="cursor: pointer;">
+                            <h4>Antonio Mendes</h4>
+                            <p style="font-size: 0.9em; color: #666;">Redes de Computadores</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Jeanna" data-lattes="#">
+                            <img src="imagens/Jeanna_Matemática.png" alt="Jeanna" style="cursor: pointer;">
+                            <h4>Jeanna</h4>
+                            <p style="font-size: 0.9em; color: #666;">Matemática II</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Thiago Fonseca"
+                            data-lattes="#">
+                            <img src="imagens/imagens2/Thiago Silva Augusto da fonseca.gif" alt="Thiago Fonseca"
+                                style="cursor: pointer;">
+                            <h4>Thiago Fonseca</h4>
+                            <p style="font-size: 0.9em; color: #666;">Filosofia</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Ivaldo Marques"
+                            data-lattes="#">
+                            <img src="imagens/Ivaldo_Informática.jpeg" alt="Ivaldo Marques" style="cursor: pointer;">
+                            <h4>Ivaldo Marques</h4>
+                            <p style="font-size: 0.9em; color: #666;">Programação Web I</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">❯</button>
+            </div>
+            <div class="carousel-indicators" id="carouselIndicators-professores-2"></div>
+        </div>
+    </section>
+
+    <br>
+    <section id="galeria-professores-3ano" class="galeria">
+        <div class="container">
+            <h2>Professores 3º Ano</h2>
+            <p class="galeria-subtitle">Docentes do Terceiro Ano</p>
+
+            <div class="carousel-container" id="carousel-professores-3">
+                <button class="carousel-btn prev">❮</button>
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack-professores-3">
+                        <!-- 8 Espaços para Professores 3º Ano -->
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Ivaldo Marques"
+                            data-lattes="#">
+                            <img src="imagens/Ivaldo_Informática.jpeg" alt="Ivaldo Marques" style="cursor: pointer;">
+                            <h4>Ivaldo Marques</h4>
+                            <p style="font-size: 0.9em; color: #666;">Programação para Internet</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Novo Português"
+                            data-lattes="#">
+                            <img src="imagens/Ifsp_logo.jpg" alt="Novo Português" style="cursor: pointer;">
+                            <h4>Novo Português</h4>
+                            <p style="font-size: 0.9em; color: #666;">Português III</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Jeanna" data-lattes="#">
+                            <img src="imagens/Jeanna_Matemática.png" alt="Jeanna" style="cursor: pointer;">
+                            <h4>Jeanna</h4>
+                            <p style="font-size: 0.9em; color: #666;">Matemática III</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Solange" data-lattes="#">
+                            <img src="imagens/Ifsp_logo.jpg" alt="Solange" style="cursor: pointer;">
+                            <h4>Solange</h4>
+                            <p style="font-size: 0.9em; color: #666;">Banco de Dados Avançado</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Antonio Mendes"
+                            data-lattes="#">
+                            <img src="imagens/imagens2/Antonio Mendes de Oliveira Neto.gif" alt="Antonio Mendes"
+                                style="cursor: pointer;">
+                            <h4>Antonio Mendes</h4>
+                            <p style="font-size: 0.9em; color: #666;">Programação</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Paulo Mannini"
+                            data-lattes="#">
+                            <img src="imagens/paulo.gif" alt="Paulo Mannini" style="cursor: pointer;">
+                            <h4>Paulo Mannini</h4>
+                            <p style="font-size: 0.9em; color: #666;">Manut. de Comp.</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Elifas" data-lattes="#">
+                            <img src="imagens/imagens2/Elifas Levi da Silva.gif" alt="Elifas" style="cursor: pointer;">
+                            <h4>Elifas</h4>
+                            <p style="font-size: 0.9em; color: #666;">Física</p>
+                        </div>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Nelson Paz"
+                            data-lattes="#">
+                            <img src="imagens/Nelson.jpeg" alt="Nelson Paz" style="cursor: pointer;">
+                            <h4>Nelson Paz</h4>
+                            <p style="font-size: 0.9em; color: #666;">Programação Web II</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next">❯</button>
+            </div>
+            <div class="carousel-indicators" id="carouselIndicators-professores-3"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>IFSP - Campus Cubatão</h3>
+                    <p>Instituto Federal de São Paulo</p>
+                    <p>Programa de Educação de Jovens e Adultos</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>📧 proeja@ifsp.edu.br</p>
+                    <p>📞 (13) 3207-8100</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Endereço</h3>
+                    <p>Rua Maria Cristina Medeiros, 1000</p>
+                    <p>Cubatão - SP, CEP 11533-160</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IFSP Campus Cubatão - Proeja. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup Lattes -->
+    <div id="lattesPopup" class="popup-overlay" onclick="if(event.target === this) closeLattesPopup()">
+        <div class="popup-content"
+            style="max-width: 500px; width: 90%; height: auto; text-align: center; max-height: 90vh; overflow-y: auto;">
+            <span class="popup-close" onclick="closeLattesPopup()">&times;</span>
+            <div id="lattes-popup-image-container" style="margin-bottom: 20px;">
+                <img id="lattes-popup-img" src="" alt="Professor"
+                    style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            </div>
+            <h2 id="lattes-popup-name" style="color: #2c3e50; margin-bottom: 15px;">Nome do Professor</h2>
+            <p style="margin-bottom: 25px; color: #7f8c8d;">Confira a trajetória acadêmica e profissional.</p>
+            <a id="lattes-popup-link" href="#" target="_blank" style="
+                display: inline-block;
+                padding: 12px 30px;
+                background-color: #3498db;
+                color: white;
+                text-decoration: none;
+                border-radius: 25px;
+                font-weight: bold;
+                transition: background 0.3s;
+                box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+            " onmouseover="this.style.backgroundColor='#2980b9'" onmouseout="this.style.backgroundColor='#3498db'">
+                📄 Acessar Currículo Lattes
+            </a>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
