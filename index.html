@@ -105,10 +105,15 @@
                     <h3>Atividades</h3>
                     <p>Palestra,Sarau,Rodas de conversa (Lanche)!</p>
                 </div>
+                <div class="evento-card" onclick="openDiretoresPopup()" style="cursor: pointer;">
+                    <div class="card-icon">�</div>
+                    <h3>Diretores</h3>
+                    <p>Diretoria do IFSP<br>Campus Cubatão</p>
+                </div>
                 <div class="evento-card" onclick="openParticipantesPopup()" style="cursor: pointer;">
                     <div class="card-icon">👥</div>
-                    <h3>Participantes</h3>
-                    <p>Diretores/Professores 1º, 2º e 3º ano<br>Proeja</p>
+                    <h3>Professores</h3>
+                    <p>Professores 1º, 2º e 3º ano<br>Proeja</p>
                 </div>
             </div>
         </div>
@@ -529,12 +534,45 @@
         </div>
     </section>
 
-    <!-- Popup Galeria de Professores -->
+    <!-- Popup Galeria de Diretores -->
+    <div id="diretoresPopup" class="popup-overlay" onclick="if(event.target === this) closeDiretoresPopup()">
+        <div class="popup-content">
+            <span class="popup-close" onclick="closeDiretoresPopup()">&times;</span>
+            <h2>Nossos Diretores</h2>
+            <div class="professores-grid">
+                <!-- Diretores -->
+                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Artarxerxes Tiago Tácito Modesto"
+                    data-lattes="#">
+                    <div class="professor-image"><img src="imagens/imagens2/Artarxerxes Tiago Tácito.jpeg"
+                            alt="Artarxerxes Tiago Tácito Modesto"></div>
+                    <h3>Artarxerxes Tiago Tácito Modesto</h3>
+                </div>
+                <div class="professor-card" onclick="openLattesPopup(this)"
+                    data-name="Claudia Cristina Soares De Carvalho" data-lattes="#">
+                    <div class="professor-image"><img src="imagens/imagens2/Cláudia Cristina.jpeg"
+                            alt="Claudia Cristina Soares De Carvalho"></div>
+                    <h3>Claudia Cristina S. De Carvalho</h3>
+                </div>
+                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Leandro Fabricio Campelo"
+                    data-lattes="#">
+                    <div class="professor-image"><img src="imagens/leandro.gif" alt="Leandro Fabricio Campelo"></div>
+                    <h3>Leandro Fabricio Campelo</h3>
+                </div>
+                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Leticia Vieira Oliveira Giordano"
+                    data-lattes="#">
+                    <div class="professor-image"><img src="imagens/imagens2/Leticia Vieira.jpeg"
+                            alt="Leticia Vieira Oliveira Giordano"></div>
+                    <h3>Leticia Vieira O. Giordano</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Popup Galeria de Professores -->
     <div id="participantesPopup" class="popup-overlay" onclick="if(event.target === this) closeParticipantesPopup()">
         <div class="popup-content">
             <span class="popup-close" onclick="closeParticipantesPopup()">&times;</span>
-            <h2>Nossos Professores e Diretores</h2>
+            <h2>Nossos Professores</h2>
             <div class="professores-grid">
                 <!-- Diretores e Professores -->
                 <div class="professor-card" onclick="openLattesPopup(this)" data-name="Adriana Rodrigues Mendonça"
@@ -613,12 +651,6 @@
                     </div>
                     <h3>Arnaldo De Carvalho Junior</h3>
                 </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Artarxerxes Tiago Tácito Modesto"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/imagens2/Artarxerxes Tiago Tácito.jpeg"
-                            alt="Artarxerxes Tiago Tácito Modesto"></div>
-                    <h3>Artarxerxes Tiago Tácito Modesto</h3>
-                </div>
                 <div class="professor-card" onclick="openLattesPopup(this)" data-name="Augusto Monteiro Ozorio"
                     data-lattes="#">
                     <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Augusto Monteiro Ozorio"></div>
@@ -645,12 +677,6 @@
                     <div class="professor-image"><img src="imagens/Ifsp_logo.jpg"
                             alt="Charles Artur Santos De Oliveira"></div>
                     <h3>Charles Artur Santos De Oliveira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)"
-                    data-name="Claudia Cristina Soares De Carvalho" data-lattes="#">
-                    <div class="professor-image"><img src="imagens/imagens2/Cláudia Cristina.jpeg"
-                            alt="Claudia Cristina Soares De Carvalho"></div>
-                    <h3>Claudia Cristina S. De Carvalho</h3>
                 </div>
                 <div class="professor-card" onclick="openLattesPopup(this)" data-name="Cristiane Ferraz E Silva Suarez"
                     data-lattes="#">
@@ -819,22 +845,11 @@
                     </div>
                     <h3>Leandro Albino M. Rodrigues</h3>
                 </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Leandro Fabricio Campelo"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/leandro.gif" alt="Leandro Fabricio Campelo"></div>
-                    <h3>Leandro Fabricio Campelo</h3>
-                </div>
                 <div class="professor-card" onclick="openLattesPopup(this)" data-name="Leonardo Matheus Marion Jorge"
                     data-lattes="#">
                     <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Leonardo Matheus Marion Jorge">
                     </div>
                     <h3>Leonardo Matheus Marion Jorge</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Leticia Vieira Oliveira Giordano"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/imagens2/Leticia Vieira.jpeg"
-                            alt="Leticia Vieira Oliveira Giordano"></div>
-                    <h3>Leticia Vieira O. Giordano</h3>
                 </div>
                 <div class="professor-card" onclick="openLattesPopup(this)" data-name="Luana Mara Almeida Teixeira"
                     data-lattes="#">

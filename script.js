@@ -223,6 +223,27 @@ function closeParticipantesPopup() {
     }
 }
 
+// Funções do Popup de Diretores
+function openDiretoresPopup() {
+    const popup = document.getElementById('diretoresPopup');
+    if (popup) {
+        popup.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeDiretoresPopup() {
+    const popup = document.getElementById('diretoresPopup');
+    if (popup) {
+        popup.style.display = 'none';
+        document.body.style.overflow = 'auto';
+
+        // Remove todas as seleções
+        const selectedCards = document.querySelectorAll('.professor-card.selected');
+        selectedCards.forEach(card => card.classList.remove('selected'));
+    }
+}
+
 // Função para selecionar professor com efeito
 function selectProfessor(card) {
     // Toggle da seleção
@@ -243,9 +264,13 @@ function selectProfessor(card) {
 // Fechar popup clicando fora
 window.addEventListener('click', function (e) {
     const popup = document.getElementById('participantesPopup');
+    const popupDiretores = document.getElementById('diretoresPopup');
     const popupLattes = document.getElementById('lattesPopup');
     if (e.target === popup) {
         closeParticipantesPopup();
+    }
+    if (e.target === popupDiretores) {
+        closeDiretoresPopup();
     }
     if (e.target === popupLattes) {
         closeLattesPopup();
@@ -256,6 +281,7 @@ window.addEventListener('click', function (e) {
 document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
         closeParticipantesPopup();
+        closeDiretoresPopup();
         closeLattesPopup();
     }
 });
@@ -273,11 +299,15 @@ function closeConemacPopup() {
 // Fechar popup ao clicar fora
 window.onclick = function (event) {
     const popupParticipantes = document.getElementById('participantesPopup');
+    const popupDiretores = document.getElementById('diretoresPopup');
     const popupConemac = document.getElementById('conemacPopup');
     const popupLattes = document.getElementById('lattesPopup');
 
     if (event.target == popupParticipantes) {
         closeParticipantesPopup();
+    }
+    if (event.target == popupDiretores) {
+        closeDiretoresPopup();
     }
     if (event.target == popupConemac) {
         closeConemacPopup();
