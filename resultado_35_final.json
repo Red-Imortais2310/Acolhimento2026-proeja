@@ -1,0 +1,67 @@
+﻿[
+    {
+        "Status":  "OK",
+        "Lattes":  "http://lattes.cnpq.br/0322712366911621",
+        "NomeCurto":  "Nelson Paz"
+    },
+    {
+        "Email":  "rocha.sergio@ifsp.edu.br",
+        "Status":  "SEM_LATTES",
+        "NomeCurto":  "Sergio Henrique"
+    },
+    {
+        "Status":  "OK",
+        "Lattes":  "http://lattes.cnpq.br/6649796144129435",
+        "NomeCurto":  "Fernando Dias"
+    },
+    {
+        "Email":  "gabriel.nascimento@ifsp.edu.br",
+        "Status":  "SEM_LATTES",
+        "NomeCurto":  "Gabriel"
+    },
+    {
+        "Email":  "ricardosorgon@ifsp.edu.br",
+        "Status":  "SEM_LATTES",
+        "NomeCurto":  "Ricardo Sorgon"
+    },
+    {
+        "Email":  "leandro.albino@ifsp.edu.br",
+        "Status":  "SEM_LATTES",
+        "NomeCurto":  "Leandro"
+    },
+    {
+        "Status":  "OK",
+        "Lattes":  "http://lattes.cnpq.br/9354778798444061",
+        "NomeCurto":  "Jeanna"
+    },
+    {
+        "Status":  "OK",
+        "Lattes":  "http://lattes.cnpq.br/6897242450860951",
+        "NomeCurto":  "Coletto"
+    },
+    {
+        "Status":  "OK",
+        "Lattes":  "http://lattes.cnpq.br/2351905355694162",
+        "NomeCurto":  "Rita"
+    },
+    {
+        "Email":  "paulamartins@ifsp.edu.br",
+        "Status":  "SEM_LATTES",
+        "NomeCurto":  "Paula"
+    },
+    {
+        "Status":  "OK",
+        "Lattes":  "http://lattes.cnpq.br/2905730630984653",
+        "NomeCurto":  "Solange"
+    },
+    {
+        "Status":  "OK",
+        "Lattes":  "http://lattes.cnpq.br/5592805912091990",
+        "NomeCurto":  "Elifas"
+    },
+    {
+        "Status":  "OK",
+        "Lattes":  "http://lattes.cnpq.br/1088212695829506",
+        "NomeCurto":  "Sueli"
+    }
+]

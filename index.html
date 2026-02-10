@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -55,7 +55,7 @@
                 <a href="#home" class="nav-link active">Início</a>
                 <a href="#evento" class="nav-link">Evento</a>
                 <a href="#galeria-eventos" class="nav-link">Galeria de Eventos</a>
-                <a href="#galeria-eventos 2" class="nav-link">Galeria de Eventos 2</a>
+                <a href="#galeria-imagens2" class="nav-link">Galeria de Eventos 2</a>
                 <a href="#contato" class="nav-link">Contato</a>
             </nav>
 
@@ -110,10 +110,10 @@
                     <h3>Diretores</h3>
                     <p>Diretoria do IFSP<br>Campus Cubatão</p>
                 </div>
-                <div class="evento-card" onclick="openParticipantesPopup()" style="cursor: pointer;">
-                    <div class="card-icon">👥</div>
-                    <h3>Professores</h3>
-                    <p>Professores 1º, 2º e 3º ano<br>Proeja</p>
+                <div class="evento-card" onclick="window.location.href='calendario.html'" style="cursor: pointer;">
+                    <div class="card-icon">📅</div>
+                    <h3>Calendário</h3>
+                    <p>Calendário Acadêmico<br>2026</p>
                 </div>
             </div>
         </div>
@@ -542,30 +542,32 @@
             <div class="professores-grid">
                 <!-- Diretores -->
                 <div class="professor-card" onclick="openLattesPopup(this)" data-name="Artarxerxes Tiago Tácito Modesto"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/imagens2/Artarxerxes Tiago Tácito - Copia.jpeg"
+                    data-lattes="http://lattes.cnpq.br/4447935676139776">
+                    <div class="professor-image"><img
+                            src="imagens/imagens2/Artarxerxes Tiago Tácito - Copia-httplattes.cnpq.br4447935676139776.jpeg"
                             alt="Artarxerxes Tiago Tácito Modesto"></div>
                     <h3>Artarxerxes Tiago Tácito Modesto</h3>
                 </div>
                 <div class="professor-card" onclick="openLattesPopup(this)"
-                    data-name="Claudia Cristina Soares De Carvalho" data-lattes="#">
+                    data-name="Claudia Cristina Soares De Carvalho"
+                    data-lattes="http://lattes.cnpq.br/7955383731847589">
                     <div class="professor-image"><img src="imagens/imagens2/Cláudia Cristina - Copia.jpeg"
                             alt="Claudia Cristina Soares De Carvalho"></div>
                     <h3>Claudia Cristina S. De Carvalho</h3>
                 </div>
                 <div class="professor-card" onclick="openLattesPopup(this)" data-name="Leandro Fabricio Campelo"
-                    data-lattes="#">
+                    data-lattes="http://lattes.cnpq.br/2801594081219451">
                     <div class="professor-image"><img src="imagens/leandro.gif" alt="Leandro Fabricio Campelo"></div>
                     <h3>Leandro Fabricio Campelo</h3>
                 </div>
                 <div class="professor-card" onclick="openLattesPopup(this)" data-name="Leticia Vieira Oliveira Giordano"
-                    data-lattes="#">
+                    data-lattes="http://lattes.cnpq.br/5364387869010471">
                     <div class="professor-image"><img src="imagens/imagens2/Leticia Vieira - Copia.jpeg"
                             alt="Leticia Vieira Oliveira Giordano"></div>
                     <h3>Leticia Vieira O. Giordano</h3>
                 </div>
                 <div class="professor-card" onclick="openLattesPopup(this)" data-name="Michelli Analy de Lima Rosa"
-                    data-lattes="#">
+                    data-lattes="http://lattes.cnpq.br/">
                     <div class="professor-image"><img src="imagens/Michelli_Analy.jpeg"
                             alt="Michelli Analy de Lima Rosa"></div>
                     <h3>Michelli Analy de Lima Rosa</h3>
@@ -574,550 +576,7 @@
         </div>
     </div>
 
-    <!-- Popup Galeria de Professores -->
-    <div id="participantesPopup" class="popup-overlay" onclick="if(event.target === this) closeParticipantesPopup()">
-        <div class="popup-content">
-            <span class="popup-close" onclick="closeParticipantesPopup()">&times;</span>
-            <h2>Nossos Professores</h2>
-            <div class="professores-grid">
-                <!-- Diretores e Professores -->
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Adriana Rodrigues Mendonça"
-                    data-lattes="http://lattes.cnpq.br/0530827038331816">
-                    <div class="professor-image"><img src="imagens/Adriana_Rodrigues.png"
-                            alt="Adriana Rodrigues Mendonça">
-                    </div>
-                    <h3>Adriana Rodrigues Mendonça</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Alberto Luiz Ferreira"
-                    data-lattes="http://lattes.cnpq.br/3443182824878866">
-                    <div class="professor-image"><img src="imagens/Alberto_Ferreira.png" alt="Alberto Luiz Ferreira">
-                    </div>
-                    <h3>Alberto Luiz Ferreira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Alexandre Araujo Bezerra"
-                    data-lattes="http://lattes.cnpq.br/5647518666766098">
-                    <div class="professor-image"><img src="imagens/Alexandre_Bezerra.png"
-                            alt="Alexandre Araujo Bezerra"></div>
-                    <h3>Alexandre Araujo Bezerra</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Alexandre Manicoba De Oliveira"
-                    data-lattes="http://lattes.cnpq.br/2351905355694162">
-                    <div class="professor-image"><img src="imagens/Alexandre_Manicoba.png"
-                            alt="Alexandre Manicoba De Oliveira">
-                    </div>
-                    <h3>Alexandre Manicoba De Oliveira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Aline Maria Dos Santos Teixeira"
-                    data-lattes="http://lattes.cnpq.br/8589666863624180">
-                    <div class="professor-image"><img src="imagens/imagens2/Aline Maria dos Santos Teixeira.gif"
-                            alt="Aline Maria Dos Santos Teixeira"></div>
-                    <h3>Aline Maria Dos Santos Teixeira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Amauri Dias De Carvalho"
-                    data-lattes="http://lattes.cnpq.br/4633002288019460">
-                    <div class="professor-image"><img src="imagens/Amauri_Carvalho.png" alt="Amauri Dias De Carvalho">
-                    </div>
-                    <h3>Amauri Dias De Carvalho</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)"
-                    data-name="Ana Elisa Sobral Caetano Da Silva Ferreira"
-                    data-lattes="http://lattes.cnpq.br/0322712366911621">
-                    <div class="professor-image"><img src="imagens/Ana_Elisa.png"
-                            alt="Ana Elisa Sobral Caetano Da Silva Ferreira"></div>
-                    <h3>Ana Elisa Sobral C. Ferreira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Anderson Alves De Oliveira"
-                    data-lattes="http://lattes.cnpq.br/8390762794908585">
-                    <div class="professor-image"><img src="imagens/Anderson_Oliveira.png"
-                            alt="Anderson Alves De Oliveira">
-                    </div>
-                    <h3>Anderson Alves De Oliveira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Antonio Cesar Lins Rodrigues"
-                    data-lattes="http://lattes.cnpq.br/5364387869010471">
-                    <div class="professor-image"><img src="imagens/Antonio_Cesar.png"
-                            alt="Antonio Cesar Lins Rodrigues">
-                    </div>
-                    <h3>Antonio Cesar L. Rodrigues</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Antonio Mendes De Oliveira Neto"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/imagens2/Antonio Mendes de Oliveira Neto.gif"
-                            alt="Antonio Mendes De Oliveira Neto"></div>
-                    <h3>Antonio Mendes De O. Neto</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Aristides Faria Lopes Dos Santos"
-                    data-lattes="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4737658J8">
-                    <div class="professor-image"><img src="imagens/Aristides_Faria.png"
-                            alt="Aristides Faria Lopes Dos Santos"></div>
-                    <h3>Aristides Faria L. Dos Santos</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Arnaldo De Carvalho Junior"
-                    data-lattes="http://lattes.cnpq.br/2801594081219451">
-                    <div class="professor-image"><img src="imagens/Arnaldo_Carvalho.png"
-                            alt="Arnaldo De Carvalho Junior">
-                    </div>
-                    <h3>Arnaldo De Carvalho Junior</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Augusto Monteiro Ozorio"
-                    data-lattes="http://lattes.cnpq.br/8946741255015096">
-                    <div class="professor-image"><img src="imagens/Augusto_Monteiro.png" alt="Augusto Monteiro Ozorio">
-                    </div>
-                    <h3>Augusto Monteiro Ozorio</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)"
-                    data-name="Carlos Barreira Da Silva Farinhas" data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg"
-                            alt="Carlos Barreira Da Silva Farinhas"></div>
-                    <h3>Carlos Barreira D. S. Farinhas</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Carlos Jair Coletto"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Carlos Jair Coletto"></div>
-                    <h3>Carlos Jair Coletto</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Caroline Alves Soler"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Caroline Alves Soler"></div>
-                    <h3>Caroline Alves Soler</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Charles Artur Santos De Oliveira"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg"
-                            alt="Charles Artur Santos De Oliveira"></div>
-                    <h3>Charles Artur Santos De Oliveira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Cristiane Ferraz E Silva Suarez"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Cristiane Ferraz E Silva Suarez">
-                    </div>
-                    <h3>Cristiane Ferraz E S. Suarez</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Daiane Evangelista Da Silva"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Daiane Evangelista Da Silva">
-                    </div>
-                    <h3>Daiane Evangelista Da Silva</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Douglas Rodrigues Silva"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Douglas Rodrigues Silva"></div>
-                    <h3>Douglas Rodrigues Silva</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Edmilson Roberto Braga"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Edmilson Roberto Braga"></div>
-                    <h3>Edmilson Roberto Braga</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Eduardo Henrique Gomes"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Eduardo Henrique Gomes"></div>
-                    <h3>Eduardo Henrique Gomes</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Elaine Cristina De Araujo"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Elaine Cristina De Araujo"></div>
-                    <h3>Elaine Cristina De Araujo</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Elcio Rodrigues Aranha"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Elcio Rodrigues Aranha"></div>
-                    <h3>Elcio Rodrigues Aranha</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Elian João Agnoletto"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Elian João Agnoletto"></div>
-                    <h3>Elian João Agnoletto</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Elifas Levi Da Silva"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/imagens2/Elifas Levi da Silva.gif"
-                            alt="Elifas Levi Da Silva"></div>
-                    <h3>Elifas Levi Da Silva</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Enzo Bertazini" data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Enzo Bertazini"></div>
-                    <h3>Enzo Bertazini</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Fabiana De Lacerda Vilaco"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Fabiana De Lacerda Vilaco"></div>
-                    <h3>Fabiana De Lacerda Vilaco</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Ferdinando Calle"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Ferdinando Calle"></div>
-                    <h3>Ferdinando Calle</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Fernanda Aparecida Dos Santos"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Fernanda Aparecida Dos Santos">
-                    </div>
-                    <h3>Fernanda Aparecida Dos Santos</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Fernando Dias De Oliveira"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/fernando.gif" alt="Fernando Dias De Oliveira"></div>
-                    <h3>Fernando Dias De Oliveira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Fernando Ribeiro Dos Santos"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Fernando Ribeiro Dos Santos">
-                    </div>
-                    <h3>Fernando Ribeiro Dos Santos</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Filipe Bento Magalhães"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Filipe Bento Magalhães"></div>
-                    <h3>Filipe Bento Magalhães</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Flavia Daylane Tavares De Luna"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Flavia Daylane Tavares De Luna">
-                    </div>
-                    <h3>Flavia Daylane T. De Luna</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Gabriel Silva Xavier Nascimento"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Gabriel Silva Xavier Nascimento">
-                    </div>
-                    <h3>Gabriel Silva X. Nascimento</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Giovane Marçal De Oliveira"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/giovanne.gif" alt="Giovane Marçal De Oliveira"></div>
-                    <h3>Giovane Marçal De Oliveira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Gisele De Gouvea"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Gisele De Gouvea"></div>
-                    <h3>Gisele De Gouvea</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Glauber Renato Colnago"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Glauber Renato Colnago"></div>
-                    <h3>Glauber Renato Colnago</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Humberto Hickel De Carvalho"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Humberto Hickel De Carvalho">
-                    </div>
-                    <h3>Humberto Hickel De Carvalho</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)"
-                    data-name="Isabela Assunção De Oliveira Andrade" data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Isabela Assunção De O. Andrade">
-                    </div>
-                    <h3>Isabela Assunção De O. Andrade</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Ivaldo Marques Batista"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ivaldo_Informática.jpeg"
-                            alt="Ivaldo Marques Batista"></div>
-                    <h3>Ivaldo Marques Batista</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Jairo Barbosa Junior"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Jairo Barbosa Junior"></div>
-                    <h3>Jairo Barbosa Junior</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Jamielli Tomaz Pereira"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Jamielli Tomaz Pereira"></div>
-                    <h3>Jamielli Tomaz Pereira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Julio Cesar Zandonadi"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Julio Cesar Zandonadi"></div>
-                    <h3>Julio Cesar Zandonadi</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Karina Stefânia Souza Lopes"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Karina Stefânia Souza Lopes">
-                    </div>
-                    <h3>Karina Stefânia Souza Lopes</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)"
-                    data-name="Katya Laís Ferreira Patella Couto" data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg"
-                            alt="Katya Laís Ferreira Patella Couto"></div>
-                    <h3>Katya Laís Ferreira P. Couto</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Khalil Salem Sugui"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Khalil Salem Sugui"></div>
-                    <h3>Khalil Salem Sugui</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Leandro Albino Mosca Rodrigues"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Leandro Albino Mosca Rodrigues">
-                    </div>
-                    <h3>Leandro Albino M. Rodrigues</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Leonardo Matheus Marion Jorge"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Leonardo Matheus Marion Jorge">
-                    </div>
-                    <h3>Leonardo Matheus Marion Jorge</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Luana Mara Almeida Teixeira"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Luana Mara Almeida Teixeira">
-                    </div>
-                    <h3>Luana Mara Almeida Teixeira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Lucas Kenjy Bazaglia Kuroda"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Lucas Kenjy Bazaglia Kuroda">
-                    </div>
-                    <h3>Lucas Kenjy Bazaglia Kuroda</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Luciano André Carvalho Reis"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Luciano André Carvalho Reis">
-                    </div>
-                    <h3>Luciano André Carvalho Reis</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Luiz Henrique Kiehn"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Luiz Henrique Kiehn"></div>
-                    <h3>Luiz Henrique Kiehn</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Marcelo Eduardo Pereira"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Marcelo Eduardo Pereira"></div>
-                    <h3>Marcelo Eduardo Pereira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Marcelo Macchi Da Silva"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Marcelo Macchi Da Silva"></div>
-                    <h3>Marcelo Macchi Da Silva</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Marcelo Pereira Bergamaschi"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Marcelo Pereira Bergamaschi">
-                    </div>
-                    <h3>Marcelo Pereira Bergamaschi</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Marcelo Saraiva Coelho"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Marcelo Saraiva Coelho"></div>
-                    <h3>Marcelo Saraiva Coelho</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Marciel Silva Santos"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Marciel Silva Santos"></div>
-                    <h3>Marciel Silva Santos</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Marco Aurélio Pires Marques"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Marco Aurélio Pires Marques">
-                    </div>
-                    <h3>Marco Aurélio Pires Marques</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Marcos Marinovic Doro"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Marcos Marinovic Doro"></div>
-                    <h3>Marcos Marinovic Doro</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Marcos Salazar Francisco"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Marcos Salazar Francisco"></div>
-                    <h3>Marcos Salazar Francisco</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)"
-                    data-name="Maria De Fátima Das Neves Moreira" data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg"
-                            alt="Maria De Fátima Das Neves Moreira"></div>
-                    <h3>Maria De Fátima D. N. Moreira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)"
-                    data-name="Maria Jeanna Sousa Dos Santos Oliveira" data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Jeanna_Matemática.png"
-                            alt="Maria Jeanna Sousa Dos Santos Oliveira"></div>
-                    <h3>Maria Jeanna S. D. S. Oliveira</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Marina Duarte Gomes Silva"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Marina Duarte Gomes Silva"></div>
-                    <h3>Marina Duarte Gomes Silva</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Marta Fernandes Garcia"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Marta Fernandes Garcia"></div>
-                    <h3>Marta Fernandes Garcia</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Matilde Perez Quintairos"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Matilde Perez Quintairos"></div>
-                    <h3>Matilde Perez Quintairos</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Mauricio Neves Asenjo"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Mauricio Neves Asenjo"></div>
-                    <h3>Mauricio Neves Asenjo</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Natalia Salan Marpica"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/imagens2/Natália Salan Marpica.gif"
-                            alt="Natalia Salan Marpica"></div>
-                    <h3>Natalia Salan Marpica</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Nelson Da Silva Paz"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Nelson.jpeg" alt="Nelson Da Silva Paz"></div>
-                    <h3>Nelson Da Silva Paz</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Nelson Nascimento Junior"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Nelson Nascimento Junior"></div>
-                    <h3>Nelson Nascimento Junior</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Nilce Camila De Carvalho"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Nilce Camila De Carvalho"></div>
-                    <h3>Nilce Camila De Carvalho</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Paula Larangeira Garcia Martins"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Paula Larangeira Garcia Martins">
-                    </div>
-                    <h3>Paula Larangeira Garcia Martins</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Paulo Bueno Guerra"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Paulo Bueno Guerra"></div>
-                    <h3>Paulo Bueno Guerra</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Paulo Jorge De Oliveira Carvalho"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg"
-                            alt="Paulo Jorge De Oliveira Carvalho"></div>
-                    <h3>Paulo Jorge De Oliveira Carvalho</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Paulo Mannini" data-lattes="#">
-                    <div class="professor-image"><img src="imagens/paulo.gif" alt="Paulo Mannini"></div>
-                    <h3>Paulo Mannini</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Paulo Vitor De Souza Perri"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Paulo Vitor De Souza Perri">
-                    </div>
-                    <h3>Paulo Vitor De Souza Perri</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Phelippe De Aguiar Lima"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Phelippe De Aguiar Lima"></div>
-                    <h3>Phelippe De Aguiar Lima</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Rafael Stoppa Rocha"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Rafael Stoppa Rocha"></div>
-                    <h3>Rafael Stoppa Rocha</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Rebeca Previate Medina"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Rebeca Previate Medina"></div>
-                    <h3>Rebeca Previate Medina</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Ricardo Sorgon Pires"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/ricardo.gif" alt="Ricardo Sorgon Pires"></div>
-                    <h3>Ricardo Sorgon Pires</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Ricardo Sinigaglia Arruda"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Ricardo Sinigaglia Arruda"></div>
-                    <h3>Ricardo Sinigaglia Arruda</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Rita De Cássia Demarchi"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/rita.gif" alt="Rita De Cássia Demarchi"></div>
-                    <h3>Rita De Cássia Demarchi</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Roberta Silva Antunes"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Roberta Silva Antunes"></div>
-                    <h3>Roberta Silva Antunes</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Rosana Núbia Sorbille"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Rosana Núbia Sorbille"></div>
-                    <h3>Rosana Núbia Sorbille</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Rubens Lacerda De Sá"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Rubens Lacerda De Sá"></div>
-                    <h3>Rubens Lacerda De Sá</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)"
-                    data-name="Sandra Regina Lima Dos Santos Silva" data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg"
-                            alt="Sandra Regina Lima Dos Santos Silva"></div>
-                    <h3>Sandra Regina L. D. S. Silva</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Sergio Arnaud Sampaio"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Sergio Arnaud Sampaio"></div>
-                    <h3>Sergio Arnaud Sampaio</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Sérgio Henrique Rocha Batista"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Sérgio_Inglês.png"
-                            alt="Sérgio Henrique Rocha Batista"></div>
-                    <h3>Sérgio Henrique Rocha Batista</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Solange Maria Da Silva"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Solange Maria Da Silva"></div>
-                    <h3>Solange Maria Da Silva</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)"
-                    data-name="Sueli Maria Preda Dos Santos Torres" data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg"
-                            alt="Sueli Maria Preda Dos Santos Torres"></div>
-                    <h3>Sueli Maria P. D. S. Torres</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Thiago Rodrigues Schulze"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Thiago Rodrigues Schulze"></div>
-                    <h3>Thiago Rodrigues Schulze</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Thiago Silva Augusto Da Fonseca"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/imagens2/Thiago Silva Augusto da fonseca.gif"
-                            alt="Thiago Silva Augusto Da Fonseca"></div>
-                    <h3>Thiago Silva A. Da Fonseca</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Ulisses Galvao Romao"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Ulisses Galvao Romao"></div>
-                    <h3>Ulisses Galvao Romao</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Valderi Silveira Pinto Jr"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Valderi Silveira Pinto Jr"></div>
-                    <h3>Valderi Silveira Pinto Jr</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Valeria Luiza Pereira Fedrizzi"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Valeria Luiza Pereira Fedrizzi">
-                    </div>
-                    <h3>Valeria Luiza Pereira Fedrizzi</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Wellington Santos Ramos"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Wellington Santos Ramos"></div>
-                    <h3>Wellington Santos Ramos</h3>
-                </div>
-                <div class="professor-card" onclick="openLattesPopup(this)" data-name="Wellington Tuler Moraes"
-                    data-lattes="#">
-                    <div class="professor-image"><img src="imagens/Ifsp_logo.jpg" alt="Wellington Tuler Moraes"></div>
-                    <h3>Wellington Tuler Moraes</h3>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Popup CONEMAC -->
     <div id="conemacPopup" class="popup-overlay" onclick="if(event.target === this) closeConemacPopup()">
@@ -1156,50 +615,55 @@
                     <div class="carousel-track" id="carouselTrack-professores-1">
                         <!-- 9 Espaços para Professores 1º Ano -->
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Nelson Paz"
-                            data-lattes="#">
+                            data-lattes="http://lattes.cnpq.br/3972633128640965">
                             <img src="imagens/Nelson.jpeg" alt="Nelson Paz" style="cursor: pointer;">
                             <h4>Nelson Paz</h4>
                             <p style="font-size: 0.9em; color: #666;">Arq. e Sist. Comp.</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Sergio Henrique"
-                            data-lattes="#">
+                            data-lattes="http://lattes.cnpq.br/4877420955045703">
                             <img src="imagens/Sérgio_Inglês.png" alt="Sergio Henrique" style="cursor: pointer;">
                             <h4>Sergio Henrique</h4>
                             <p style="font-size: 0.9em; color: #666;">Inglês</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Fernando Dias"
-                            data-lattes="#">
+                            data-lattes="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4866451H6">
                             <img src="imagens/fernando.gif" alt="Fernando Dias" style="cursor: pointer;">
                             <h4>Fernando Dias</h4>
                             <p style="font-size: 0.9em; color: #666;">Educação Física</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Gabriel" data-lattes="#">
-                            <img src="imagens/Ifsp_logo.jpg" alt="Gabriel" style="cursor: pointer;">
-                            <h4>Gabriel</h4>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Gabriel Silva Xavier"
+                            data-lattes="http://lattes.cnpq.br/4507944299087617">
+                            <img src="imagens/Gabriel Silva.png" alt="Gabriel Silva Xavier" style="cursor: pointer;">
+                            <h4>Gabriel Silva Xavier</h4>
                             <p style="font-size: 0.9em; color: #666;">Língua Portuguesa I</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Ricardo Sorgon"
-                            data-lattes="#">
+                            data-lattes="http://lattes.cnpq.br/1107888000348488">
                             <img src="imagens/ricardo.gif" alt="Ricardo Sorgon" style="cursor: pointer;">
                             <h4>Ricardo Sorgon</h4>
                             <p style="font-size: 0.9em; color: #666;">História</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Leandro" data-lattes="#">
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Leandro Campelo"
+                            data-lattes="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4742600U6">
                             <img src="imagens/leandro.gif" alt="Leandro" style="cursor: pointer;">
                             <h4>Leandro</h4>
                             <p style="font-size: 0.9em; color: #666;">Geografia</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Jeanna" data-lattes="#">
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Jeanna"
+                            data-lattes="http://lattes.cnpq.br/7258693512438054">
                             <img src="imagens/Jeanna_Matemática.png" alt="Jeanna" style="cursor: pointer;">
                             <h4>Jeanna</h4>
                             <p style="font-size: 0.9em; color: #666;">Matemática I</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Coletto" data-lattes="#">
-                            <img src="imagens/Ifsp_logo.jpg" alt="Coletto" style="cursor: pointer;">
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Coletto"
+                            data-lattes="http://lattes.cnpq.br/2606617037551270">
+                            <img src="imagens/Coletto.jpeg" alt="Coletto" style="cursor: pointer;">
                             <h4>Coletto</h4>
                             <p style="font-size: 0.9em; color: #666;">Desenvolvimento Web</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Rita" data-lattes="#">
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Rita"
+                            data-lattes="http://lattes.cnpq.br/4770016544453387">
                             <img src="imagens/rita.gif" alt="Rita" style="cursor: pointer;">
                             <h4>Rita</h4>
                             <p style="font-size: 0.9em; color: #666;">Artes</p>
@@ -1223,57 +687,59 @@
                 <div class="carousel">
                     <div class="carousel-track" id="carouselTrack-professores-2">
                         <!-- 9 Espaços para Professores 2º Ano -->
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Paula" data-lattes="#">
-                            <img src="imagens/Ifsp_logo.jpg" alt="Paula" style="cursor: pointer;">
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Paula"
+                            data-lattes="http://lattes.cnpq.br/2339710145228308">
+                            <img src="imagens/Paula Larangeira.png" alt="Paula" style="cursor: pointer;">
                             <h4>Paula</h4>
                             <p style="font-size: 0.9em; color: #666;">Química</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Ivaldo Marques"
-                            data-lattes="#">
+                            data-lattes="http://lattes.cnpq.br/5483359917410124">
                             <img src="imagens/Ivaldo_Informática.jpeg" alt="Ivaldo Marques" style="cursor: pointer;">
                             <h4>Ivaldo Marques</h4>
                             <p style="font-size: 0.9em; color: #666;">Banco de Dados</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Nelson Paz"
-                            data-lattes="#">
+                            data-lattes="http://lattes.cnpq.br/3972633128640965">
                             <img src="imagens/Nelson.jpeg" alt="Nelson Paz" style="cursor: pointer;">
                             <h4>Nelson Paz</h4>
                             <p style="font-size: 0.9em; color: #666;">Engenharia de Software</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Novo Português"
-                            data-lattes="#">
-                            <img src="imagens/Ifsp_logo.jpg" alt="Novo Português" style="cursor: pointer;">
-                            <h4>Novo Português</h4>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Ferdinando Calle"
+                            data-lattes="http://lattes.cnpq.br/9354778798444061">
+                            <img src="imagens/Ferdinando Calle.png" alt="Ferdinando Calle" style="cursor: pointer;">
+                            <h4>Ferdinando Calle</h4>
                             <p style="font-size: 0.9em; color: #666;">Português II</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Natália Salan"
-                            data-lattes="#">
+                            data-lattes="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4258428H4">
                             <img src="imagens/imagens2/Natália Salan Marpica.gif" alt="Natália Salan"
                                 style="cursor: pointer;">
                             <h4>Natália Salan</h4>
                             <p style="font-size: 0.9em; color: #666;">Sociologia</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Antonio Mendes"
-                            data-lattes="#">
-                            <img src="imagens/imagens2/Antonio Mendes de Oliveira Neto.gif" alt="Antonio Mendes"
-                                style="cursor: pointer;">
+                            data-lattes="http://lattes.cnpq.br/1088212695829506">
+                            <img src="imagens/imagens2/Antonio Mendes de Oliveira Neto-httplattes.cnpq.br1088212695829506.gif"
+                                alt="Antonio Mendes" style="cursor: pointer;">
                             <h4>Antonio Mendes</h4>
                             <p style="font-size: 0.9em; color: #666;">Redes de Computadores</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Jeanna" data-lattes="#">
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Jeanna"
+                            data-lattes="http://lattes.cnpq.br/7258693512438054">
                             <img src="imagens/Jeanna_Matemática.png" alt="Jeanna" style="cursor: pointer;">
                             <h4>Jeanna</h4>
                             <p style="font-size: 0.9em; color: #666;">Matemática II</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Thiago Fonseca"
-                            data-lattes="#">
+                            data-lattes="http://lattes.cnpq.br/0063865672120826">
                             <img src="imagens/imagens2/Thiago Silva Augusto da fonseca.gif" alt="Thiago Fonseca"
                                 style="cursor: pointer;">
                             <h4>Thiago Fonseca</h4>
                             <p style="font-size: 0.9em; color: #666;">Filosofia</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Ivaldo Marques"
-                            data-lattes="#">
+                            data-lattes="http://lattes.cnpq.br/5483359917410124">
                             <img src="imagens/Ivaldo_Informática.jpeg" alt="Ivaldo Marques" style="cursor: pointer;">
                             <h4>Ivaldo Marques</h4>
                             <p style="font-size: 0.9em; color: #666;">Programação Web I</p>
@@ -1298,47 +764,50 @@
                     <div class="carousel-track" id="carouselTrack-professores-3">
                         <!-- 8 Espaços para Professores 3º Ano -->
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Ivaldo Marques"
-                            data-lattes="#">
+                            data-lattes="http://lattes.cnpq.br/5483359917410124">
                             <img src="imagens/Ivaldo_Informática.jpeg" alt="Ivaldo Marques" style="cursor: pointer;">
                             <h4>Ivaldo Marques</h4>
                             <p style="font-size: 0.9em; color: #666;">Programação para Internet</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Novo Português"
-                            data-lattes="#">
-                            <img src="imagens/Ifsp_logo.jpg" alt="Novo Português" style="cursor: pointer;">
-                            <h4>Novo Português</h4>
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Ferdinando Calle"
+                            data-lattes="http://lattes.cnpq.br/9354778798444061">
+                            <img src="imagens/Ferdinando Calle.png" alt="Ferdinando Calle" style="cursor: pointer;">
+                            <h4>Ferdinando Calle</h4>
                             <p style="font-size: 0.9em; color: #666;">Português III</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Jeanna" data-lattes="#">
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Jeanna"
+                            data-lattes="http://lattes.cnpq.br/7258693512438054">
                             <img src="imagens/Jeanna_Matemática.png" alt="Jeanna" style="cursor: pointer;">
                             <h4>Jeanna</h4>
                             <p style="font-size: 0.9em; color: #666;">Matemática III</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Solange" data-lattes="#">
-                            <img src="imagens/Ifsp_logo.jpg" alt="Solange" style="cursor: pointer;">
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Solange"
+                            data-lattes="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4735270U8">
+                            <img src="imagens/Solange.jpeg" alt="Solange" style="cursor: pointer;">
                             <h4>Solange</h4>
                             <p style="font-size: 0.9em; color: #666;">Banco de Dados Avançado</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Antonio Mendes"
-                            data-lattes="#">
-                            <img src="imagens/imagens2/Antonio Mendes de Oliveira Neto.gif" alt="Antonio Mendes"
-                                style="cursor: pointer;">
+                            data-lattes="http://lattes.cnpq.br/1088212695829506">
+                            <img src="imagens/imagens2/Antonio Mendes de Oliveira Neto-httplattes.cnpq.br1088212695829506.gif"
+                                alt="Antonio Mendes" style="cursor: pointer;">
                             <h4>Antonio Mendes</h4>
                             <p style="font-size: 0.9em; color: #666;">Programação</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Paulo Mannini"
-                            data-lattes="#">
+                            data-lattes="http://lattes.cnpq.br/7188455863790975">
                             <img src="imagens/paulo.gif" alt="Paulo Mannini" style="cursor: pointer;">
                             <h4>Paulo Mannini</h4>
                             <p style="font-size: 0.9em; color: #666;">Manut. de Comp.</p>
                         </div>
-                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Elifas" data-lattes="#">
+                        <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Elifas"
+                            data-lattes="http://lattes.cnpq.br/9910460090402916">
                             <img src="imagens/imagens2/Elifas Levi da Silva.gif" alt="Elifas" style="cursor: pointer;">
                             <h4>Elifas</h4>
                             <p style="font-size: 0.9em; color: #666;">Física</p>
                         </div>
                         <div class="carousel-slide" onclick="openLattesPopup(this)" data-name="Nelson Paz"
-                            data-lattes="#">
+                            data-lattes="http://lattes.cnpq.br/3972633128640965">
                             <img src="imagens/Nelson.jpeg" alt="Nelson Paz" style="cursor: pointer;">
                             <h4>Nelson Paz</h4>
                             <p style="font-size: 0.9em; color: #666;">Programação Web II</p>

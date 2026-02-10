@@ -1,0 +1,44 @@
+# MAPEAMENTO DE LATTES - PREENCHIMENTO RÁPIDO
+# Instruções: Preencha os IDs de Lattes conforme encontrar
+# Formato: Professor Name | ID_LATTES
+
+# DIRETORES
+Artarxerxes Tiago Tácito Modesto | 
+Claudia Cristina Soares De Carvalho | 
+Leandro Fabricio Campelo | 
+Leticia Vieira Oliveira Giordano | 
+Michelli Analy de Lima Rosa | 
+
+# PROFESSORES (25 que faltam)
+Antonio Mendes De Oliveira Neto | 
+Carlos Barreira Da Silva Farinhas | 
+Carlos Jair Coletto | 
+Caroline Alves Soler | 
+Charles Artur Santos De Oliveira | 
+Cristiane Ferraz E Silva Suarez | 
+Daiane Evangelista Da Silva | 
+Douglas Rodrigues Silva | 
+Edmilson Roberto Braga | 
+Eduardo Henrique Gomes | 
+Elaine Cristina De Araujo | 
+Elcio Rodrigues Aranha | 
+Elian João Agnoletto | 
+Enzo Bertazini | 
+Fabiana De Lacerda Vilaco | 
+Ferdinando Calle | 
+Fernanda Aparecida Dos Santos | 
+Fernando Ribeiro Dos Santos | 
+Filipe Bento Magalhães | 
+Flavia Daylane Tavares De Luna | 
+Gabriel Silva Xavier Nascimento | 
+Giovane Marçal De Oliveira | 
+Gisele De Gouvea | 
+Glauber Renato Colnago | 
+Humberto Hickel De Carvalho | 
+
+# COMO USAR:
+# 1. Busque cada professor em http://lattes.cnpq.br/
+# 2. Copie o ID numérico (ex: 1234567890123)
+# 3. Cole após o pipe |
+# 4. Salve este arquivo
+# 5. Execute o script para atualizar o HTML

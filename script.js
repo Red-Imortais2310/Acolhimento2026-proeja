@@ -123,14 +123,16 @@ document.addEventListener('DOMContentLoaded', function () {
     let isPaused = false;
 
     // Auto-play com controle de pausa
+    // Auto-play com controle de pausa
     setInterval(() => {
         if (!isPaused) {
+            // Auto-play desativado conforme solicitação do usuário
             // if (carouselAlunos) carouselAlunos.move(1);
-            if (carouselEventos) carouselEventos.move(1);
-            if (carouselImagens2) carouselImagens2.move(1);
-            if (carouselProfessores1) carouselProfessores1.move(1);
-            if (carouselProfessores2) carouselProfessores2.move(1);
-            if (carouselProfessores3) carouselProfessores3.move(1);
+            // if (carouselEventos) carouselEventos.move(1);
+            // if (carouselImagens2) carouselImagens2.move(1);
+            // if (carouselProfessores1) carouselProfessores1.move(1);
+            // if (carouselProfessores2) carouselProfessores2.move(1);
+            // if (carouselProfessores3) carouselProfessores3.move(1);
         }
     }, 5000);
 

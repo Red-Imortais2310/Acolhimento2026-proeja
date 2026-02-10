@@ -1,0 +1,63 @@
+MAPEAMENTO DE LATTES - IFSP CAMPUS CUBATÃO
+===========================================
+
+Nota: Este arquivo contém os nomes dos professores com informações de perfis encontrados em Google Scholar.
+Para completar os IDs de Lattes, acesse: http://lattes.cnpq.br/
+
+DIRETORES:
+==========
+
+Nome | ID_Lattes | URL_Completa | Google Scholar
+----|-----------|--------------|----------------
+Artarxerxes Tiago Tácito Modesto | PENDENTE | http://lattes.cnpq.br/PENDENTE | https://scholar.google.com.br/citations?user=JslBIEEAAAAJ
+Claudia Cristina Soares De Carvalho | PENDENTE | http://lattes.cnpq.br/PENDENTE | https://scholar.google.com.br/citations?user=x3grG94AAAAJ
+Leandro Fabricio Campelo | PENDENTE | http://lattes.cnpq.br/PENDENTE | https://scholar.google.com.br/citations?user=iO4xbYYAAAAJ
+Leticia Vieira Oliveira Giordano | NÃO ENCONTRADO | | 
+Michelli Analy de Lima Rosa | NÃO ENCONTRADO PERFIL DE IFSP | | 
+
+PROFESSORES:
+============
+
+Nome | ID_Lattes | URL_Completa | Google Scholar
+----|-----------|--------------|----------------
+Antonio Mendes De Oliveira Neto | PENDENTE | http://lattes.cnpq.br/PENDENTE | https://scholar.google.com.br/citations?user=RniiM28AAAAJ
+Carlos Barreira Da Silva Farinhas | PENDENTE | http://lattes.cnpq.br/PENDENTE | 
+Carlos Jair Coletto | ENCONTRADO | http://lattes.cnpq.br/ | sol.sbc.org.br
+Caroline Alves Soler | PENDENTE | http://lattes.cnpq.br/PENDENTE | Múltiplos artigos IFSP/Espanhol
+Charles Artur Santos De Oliveira | NÃO BUSCADO | | 
+Cristiane Ferraz E Silva Suarez | NÃO BUSCADO | | 
+Daiane Evangelista Da Silva | NÃO BUSCADO | | 
+Douglas Rodrigues Silva | ENCONTRADO (parcial) | http://lattes.cnpq.br/PENDENTE | Artigos IFSP
+Edmilson Roberto Braga | PENDENTE | http://lattes.cnpq.br/PENDENTE | Scholar - Múltiplos artigos
+Eduardo Henrique Gomes | NÃO BUSCADO | | 
+Elaine Cristina De Araujo | NÃO BUSCADO | | 
+Elcio Rodrigues Aranha | PENDENTE | http://lattes.cnpq.br/PENDENTE | Scholar - Múltiplos artigos IFSP
+Elian João Agnoletto | PENDENTE | http://lattes.cnpq.br/PENDENTE | Scholar - Artigos IEEE
+Enzo Bertazini | PENDENTE | http://lattes.cnpq.br/PENDENTE | Scholar - Múltiplos artigos IFSP
+Fabiana De Lacerda Vilaco | NÃO BUSCADO | | 
+Ferdinando Calle | NÃO BUSCADO | | 
+Fernanda Aparecida Dos Santos | NÃO BUSCADO | | 
+Fernando Ribeiro Dos Santos | ENCONTRADO (parcial) | http://lattes.cnpq.br/PENDENTE | Scholar - Turismo/IFSP
+Filipe Bento Magalhães | NÃO BUSCADO | | 
+Flavia Daylane Tavares De Luna | NÃO BUSCADO | | 
+
+INSTRUÇÕES PARA COMPLETAR O MAPEAMENTO:
+=========================================
+
+1. Acesse http://lattes.cnpq.br/
+2. Procure pelo nome do professor
+3. Quando encontrar o currículo correto, a URL final será:
+   http://lattes.cnpq.br/{ID_DO_LATTES}
+   
+   Exemplo: http://lattes.cnpq.br/1234567890123
+   
+4. O ID é o número no final da URL (10-15 dígitos)
+
+OBSERVAÇÕES:
+============
+- Alguns professores podem ter perfis no Google Scholar, ResearchGate ou Academia.edu
+- A busca no site do CNPq pode ser feita por nome completo ou parcial
+- Alguns nomes podem estar com variações (com/sem acento, ordem diferente)
+- Alguns professores podem não ter currículo Lattes cadastrado
+
+Busca realizada em: 05 de fevereiro de 2026
