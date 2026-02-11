@@ -10,162 +10,215 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
-            background: #fdfdfd;
+            background: #f0f2f5;
             color: #333;
-            text-align: center;
-            padding: 120px 20px 50px;
+            padding-top: 80px;
+            margin: 0;
         }
 
         .calendar-container {
-            max-width: 900px;
+            max-width: 1400px;
             margin: 0 auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px 20px;
         }
 
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #3498db;
-            display: inline-block;
-            padding-bottom: 10px;
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px;
+            background: linear-gradient(135deg, #2e7d32 0%, #4CAF50 100%);
+            color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.2);
         }
 
-        p {
-            font-size: 1.1em;
-            color: #555;
-            line-height: 1.6;
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .back-btn {
-            display: inline-block;
-            margin-top: 40px;
-            padding: 12px 25px;
-            background: #3498db;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        .back-btn:hover {
-            background: #2980b9;
-            transform: translateY(-2px);
-        }
-
-        .calendar-placeholder {
-            margin: 40px 0;
-            padding: 60px;
-            background-color: #f9f9f9;
-            border: 2px dashed #ddd;
-            border-radius: 12px;
-            color: #888;
-        }
-
-        .calendar-icon-large {
-            font-size: 4rem;
-            color: #bdc3c7;
-            margin-bottom: 20px;
-        }
-
-        /* Schedule Table Styles */
+        /* Título do Ano */
         .year-title {
-            color: #2e7d32;
-            margin-top: 40px;
-            margin-bottom: 20px;
+            background: linear-gradient(135deg, #2e7d32, #4CAF50);
+            color: white;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+            margin: 40px 0 0 0;
             font-size: 1.8rem;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
+            font-weight: 700;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(46, 125, 50, 0.2);
+        }
+
+        /* Caixa de Observações */
+        .observations-box {
+            background: #e1f5fe;
+            padding: 15px 20px;
+            border-left: 5px solid #03a9f4;
+            margin-bottom: 0;
+        }
+
+        .observations-box h3 {
+            color: #01579b;
+            margin: 0 0 8px 0;
+            font-size: 1.1rem;
+        }
+
+        .observations-box p {
+            color: #0277bd;
+            margin: 3px 0;
+            font-size: 0.9rem;
+        }
+
+        /* Tabela Responsiva */
+        .table-wrapper {
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            margin-bottom: 50px;
+            border-radius: 15px;
         }
 
         .table-responsive {
             overflow-x: auto;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
         .schedule-table {
             width: 100%;
             border-collapse: collapse;
-            background: #fff;
-            min-width: 600px;
+            min-width: 900px;
         }
 
-        .schedule-table th,
-        .schedule-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #eee;
+        .schedule-table thead {
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
         }
 
         .schedule-table th {
-            background-color: #2e7d32;
             color: white;
-            font-weight: 500;
+            padding: 15px 12px;
+            text-align: center;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-right: 2px solid rgba(255, 255, 255, 0.2);
         }
 
-        .schedule-table tr:nth-child(even) {
+        .schedule-table th:last-child {
+            border-right: none;
+        }
+
+        .schedule-table th:first-child {
+            background: #2e7d32;
+            font-size: 1.1rem;
+        }
+
+        .schedule-table tbody tr:nth-child(even) {
             background-color: #f9f9f9;
         }
 
-        .schedule-table tr:hover {
-            background-color: #f1f1f1;
+        .schedule-table tbody tr:hover {
+            background-color: #e8f5e9;
+            transition: background 0.3s ease;
         }
 
-        .schedule-table td:nth-child(1) {
-            font-weight: bold;
-            color: #444;
-            width: 35%;
+        .schedule-table td {
+            padding: 12px 10px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            border-right: 1px solid #eee;
+            vertical-align: middle;
+            font-size: 0.9rem;
         }
 
-        .schedule-table td:nth-child(2) {
-            color: #666;
-            width: 30%;
-        }
-
-        .schedule-table td:nth-child(3) {
+        .schedule-table td:first-child {
+            background: #fafafa;
+            font-weight: 700;
             color: #2e7d32;
-            font-weight: 500;
-            width: 35%;
+            font-size: 0.95rem;
+            border-right: 2px solid #ddd;
         }
 
+        .schedule-table td:last-child {
+            border-right: none;
+        }
+
+        /* Disciplina */
+        .subject {
+            font-weight: 600;
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* Professor */
+        .professor {
+            color: #7f8c8d;
+            font-size: 0.85rem;
+        }
+
+        .empty-cell {
+            color: #bdc3c7;
+            font-style: italic;
+        }
+
+        /* Botão Voltar */
+        .back-btn {
+            display: inline-block;
+            margin: 20px auto 40px;
+            padding: 15px 35px;
+            background: linear-gradient(135deg, #4CAF50, #66BB6A);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        /* Responsividade */
         @media (max-width: 768px) {
             body {
-                padding: 15px 10px;
+                padding-top: 70px;
             }
 
             .calendar-container {
-                padding: 20px 15px;
+                padding: 20px 10px;
             }
 
-            h1 {
-                font-size: 1.6rem;
-                margin-bottom: 20px;
-            }
-
-            p {
-                font-size: 1rem;
+            .page-header h1 {
+                font-size: 1.8rem;
             }
 
             .year-title {
-                font-size: 1.4rem;
-                margin-top: 30px;
+                font-size: 1.5rem;
+                padding: 15px;
+            }
+
+            .schedule-table {
+                font-size: 0.8rem;
             }
 
             .schedule-table th,
             .schedule-table td {
-                padding: 10px 8px;
-                font-size: 0.9rem;
+                padding: 10px 6px;
             }
 
-            .back-btn {
-                width: 100%;
-                box-sizing: border-box;
-                margin-top: 30px;
+            .subject {
+                font-size: 0.85rem;
+            }
+
+            .professor {
+                font-size: 0.75rem;
             }
         }
     </style>
@@ -199,189 +252,464 @@
     </header>
 
     <div class="calendar-container">
-        <h1>Calendário Acadêmico 2026</h1>
-        <p>Acompanhe as datas importantes, feriados e eventos do nosso ano letivo.</p>
-
-        <div class="schedule-section">
-            <h2 class="year-title">1º Ano</h2>
-            <div class="table-responsive">
-                <table class="schedule-table">
-                    <thead>
-                        <tr>
-                            <th>Disciplina</th>
-                            <th>Professor</th>
-                            <th>Dia / Horário</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Arquitetura e Sistemas de Computadores</td>
-                            <td>Nelson Paz</td>
-                            <td>Segunda-feira – 19:00 às 21:15</td>
-                        </tr>
-                        <tr>
-                            <td>Inglês</td>
-                            <td>Sergio Henrique</td>
-                            <td>Segunda-feira – 21:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Educação Física</td>
-                            <td>Fernando Dias</td>
-                            <td>Terça-feira – 19:00 às 20:30</td>
-                        </tr>
-                        <tr>
-                            <td>Língua Portuguesa I</td>
-                            <td>Gabriel</td>
-                            <td>Terça-feira – 20:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>História</td>
-                            <td>Ricardo Sorgon</td>
-                            <td>Quarta-feira – 19:00 às 20:30</td>
-                        </tr>
-                        <tr>
-                            <td>Geografia</td>
-                            <td>Leandro</td>
-                            <td>Quinta-feira – 19:00 às 20:30</td>
-                        </tr>
-                        <tr>
-                            <td>Matemática I</td>
-                            <td>Jeanna</td>
-                            <td>Quinta-feira – 20:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Desenvolvimento Web</td>
-                            <td>Coletto</td>
-                            <td>Sexta-feira – 19:00 às 21:15</td>
-                        </tr>
-                        <tr>
-                            <td>Artes</td>
-                            <td>Rita</td>
-                            <td>Sexta-feira – 21:30 às 23:00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h2 class="year-title">2º Ano</h2>
-            <div class="table-responsive">
-                <table class="schedule-table">
-                    <thead>
-                        <tr>
-                            <th>Disciplina</th>
-                            <th>Professor</th>
-                            <th>Dia / Horário</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Química</td>
-                            <td>Paula</td>
-                            <td>Segunda-feira – 19:00 às 21:15</td>
-                        </tr>
-                        <tr>
-                            <td>Banco de Dados</td>
-                            <td>Ivaldo</td>
-                            <td>Segunda-feira – 21:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Engenharia de Software</td>
-                            <td>Nelson Paz</td>
-                            <td>Terça-feira – 19:00 às 21:15</td>
-                        </tr>
-                        <tr>
-                            <td>Português II</td>
-                            <td>Novo Português</td>
-                            <td>Terça-feira – 21:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Sociologia</td>
-                            <td>Natalia</td>
-                            <td>Quarta-feira – 19:00 às 21:15</td>
-                        </tr>
-                        <tr>
-                            <td>Redes de Computadores</td>
-                            <td>Antonio Mendes</td>
-                            <td>Quarta-feira – 21:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Matemática II</td>
-                            <td>Jeanna</td>
-                            <td>Quinta-feira – 19:00 às 21:15</td>
-                        </tr>
-                        <tr>
-                            <td>Filosofia</td>
-                            <td>Thiago Fonseca</td>
-                            <td>Quinta-feira – 21:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Programação Web I</td>
-                            <td>Ivaldo</td>
-                            <td>Sexta-feira – 19:00 às 21:15</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h2 class="year-title">3º Ano</h2>
-            <div class="table-responsive">
-                <table class="schedule-table">
-                    <thead>
-                        <tr>
-                            <th>Disciplina</th>
-                            <th>Professor</th>
-                            <th>Dia / Horário</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Programação para Internet</td>
-                            <td>Ivaldo</td>
-                            <td>Segunda-feira – 19:00 às 21:15</td>
-                        </tr>
-                        <tr>
-                            <td>Português III</td>
-                            <td>Novo Português</td>
-                            <td>Segunda-feira – 21:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Matemática III</td>
-                            <td>Jeanna</td>
-                            <td>Terça-feira – 21:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Manutenção de Computadores</td>
-                            <td>Paulo Mannini</td>
-                            <td>Quarta-feira – 19:45 às 20:30</td>
-                        </tr>
-                        <tr>
-                            <td>Física</td>
-                            <td>Elifas</td>
-                            <td>Quarta-feira – 21:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Programação</td>
-                            <td>Antonio Mendes</td>
-                            <td>Quinta-feira – 19:00 às 20:30</td>
-                        </tr>
-                        <tr>
-                            <td>Banco de Dados Avançado</td>
-                            <td>Solange</td>
-                            <td>Quinta-feira – 20:30 às 23:00</td>
-                        </tr>
-                        <tr>
-                            <td>Programação Web II</td>
-                            <td>Nelson Paz</td>
-                            <td>Sexta-feira – 20:30 às 23:00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <!-- Cabeçalho da Página -->
+        <div class="page-header">
+            <h1>📅 Horários das Aulas 2026 - PROEJA</h1>
         </div>
 
-        <a href="index.html" class="back-btn">← Voltar para a Página Inicial</a>
+        <!-- ========== 1º ANO ========== -->
+<div class="table-wrapper">
+    <h2 class="year-title">HORÁRIO DA TURMA 1º ANO</h2>
+    
+    <div class="observations-box">
+        <h3>📌 Observações:</h3>
+        <p>Responsável: Coordenação</p>
     </div>
-    <script src="script.js"></script>
+
+    <div class="table-responsive">
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>19:00<br>19:45</td>
+                    <td>
+                        <span class="subject">Arq. Sistemas</span>
+                        <span class="professor">Nelson Paz</span>
+                    </td>
+                    <td>
+                        <span class="subject">Ed. Física</span>
+                        <span class="professor">Fernando Dias</span>
+                    </td>
+                    <td>
+                        <span class="subject">História</span>
+                        <span class="professor">Ricardo Sorgon</span>
+                    </td>
+                    <td>
+                        <span class="subject">Geografia</span>
+                        <span class="professor">Leandro</span>
+                    </td>
+                    <td>
+                        <span class="subject">Desenv. Web</span>
+                        <span class="professor">Coletto</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>19:45<br>20:30</td>
+                    <td>
+                        <span class="subject">Arq. Sistemas</span>
+                        <span class="professor">Nelson Paz</span>
+                    </td>
+                    <td>
+                        <span class="subject">Ed. Física</span>
+                        <span class="professor">Fernando Dias</span>
+                    </td>
+                    <td>
+                        <span class="subject">História</span>
+                        <span class="professor">Ricardo Sorgon</span>
+                    </td>
+                    <td>
+                        <span class="subject">Geografia</span>
+                        <span class="professor">Leandro</span>
+                    </td>
+                    <td>
+                        <span class="subject">Desenv. Web</span>
+                        <span class="professor">Coletto</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>20:30<br>21:15</td>
+                    <td>
+                        <span class="subject">Arq. Sistemas</span>
+                        <span class="professor">Nelson Paz</span>
+                    </td>
+                    <td>
+                        <span class="subject">Português I</span>
+                        <span class="professor">Gabriel</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                    <td>
+                        <span class="subject">Matemática I</span>
+                        <span class="professor">Jeanna</span>
+                    </td>
+                    <td>
+                        <span class="subject">Desenv. Web</span>
+                        <span class="professor">Coletto</span>
+                    </td>
+                </tr>
+                <!-- INTERVALO SUTIL -->
+                <tr style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 4px solid #2196F3;">
+                    <td colspan="6" style="padding: 8px; text-align: center; font-size: 0.85rem; color: #1565c0; font-weight: 600; letter-spacing: 1px;">
+                        ⏸️ INTERVALO (15 minutos)
+                    </td>
+                </tr>
+                <tr>
+                    <td>21:30<br>22:15</td>
+                    <td>
+                        <span class="subject">Inglês</span>
+                        <span class="professor">Sergio Henrique</span>
+                    </td>
+                    <td>
+                        <span class="subject">Português I</span>
+                        <span class="professor">Gabriel</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                    <td>
+                        <span class="subject">Matemática I</span>
+                        <span class="professor">Jeanna</span>
+                    </td>
+                    <td>
+                        <span class="subject">Artes</span>
+                        <span class="professor">Rita</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>22:15<br>23:00</td>
+                    <td>
+                        <span class="subject">Inglês</span>
+                        <span class="professor">Sergio Henrique</span>
+                    </td>
+                    <td>
+                        <span class="subject">Português I</span>
+                        <span class="professor">Gabriel</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                    <td>
+                        <span class="subject">Matemática I</span>
+                        <span class="professor">Jeanna</span>
+                    </td>
+                    <td>
+                        <span class="subject">Artes</span>
+                        <span class="professor">Rita</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+        <!-- ========== 2º ANO ========== -->
+<div class="table-wrapper">
+    <h2 class="year-title">HORÁRIO DA TURMA 2º ANO</h2>
+    
+    <div class="observations-box">
+        <h3>📌 Observações:</h3>
+        <p>Responsável: Coordenação</p>
+    </div>
+
+    <div class="table-responsive">
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>19:00<br>19:45</td>
+                    <td>
+                        <span class="subject">Química</span>
+                        <span class="professor">Paula</span>
+                    </td>
+                    <td>
+                        <span class="subject">Eng. Software</span>
+                        <span class="professor">Nelson Paz</span>
+                    </td>
+                    <td>
+                        <span class="subject">Sociologia</span>
+                        <span class="professor">Natalia</span>
+                    </td>
+                    <td>
+                        <span class="subject">Matemática II</span>
+                        <span class="professor">Jeanna</span>
+                    </td>
+                    <td>
+                        <span class="subject">Prog. Web I</span>
+                        <span class="professor">Ivaldo</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>19:45<br>20:30</td>
+                    <td>
+                        <span class="subject">Química</span>
+                        <span class="professor">Paula</span>
+                    </td>
+                    <td>
+                        <span class="subject">Eng. Software</span>
+                        <span class="professor">Nelson Paz</span>
+                    </td>
+                    <td>
+                        <span class="subject">Sociologia</span>
+                        <span class="professor">Natalia</span>
+                    </td>
+                    <td>
+                        <span class="subject">Matemática II</span>
+                        <span class="professor">Jeanna</span>
+                    </td>
+                    <td>
+                        <span class="subject">Prog. Web I</span>
+                        <span class="professor">Ivaldo</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>20:30<br>21:15</td>
+                    <td>
+                        <span class="subject">Química</span>
+                        <span class="professor">Paula</span>
+                    </td>
+                    <td>
+                        <span class="subject">Eng. Software</span>
+                        <span class="professor">Nelson Paz</span>
+                    </td>
+                    <td>
+                        <span class="subject">Sociologia</span>
+                        <span class="professor">Natalia</span>
+                    </td>
+                    <td>
+                        <span class="subject">Matemática II</span>
+                        <span class="professor">Jeanna</span>
+                    </td>
+                    <td>
+                        <span class="subject">Prog. Web I</span>
+                        <span class="professor">Ivaldo</span>
+                    </td>
+                </tr>
+                <!-- INTERVALO SUTIL -->
+                <tr style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 4px solid #2196F3;">
+                    <td colspan="6" style="padding: 8px; text-align: center; font-size: 0.85rem; color: #1565c0; font-weight: 600; letter-spacing: 1px;">
+                        ⏸️ INTERVALO (15 minutos)
+                    </td>
+                </tr>
+                <tr>
+                    <td>21:30<br>22:15</td>
+                    <td>
+                        <span class="subject">Banco de Dados</span>
+                        <span class="professor">Ivaldo</span>
+                    </td>
+                    <td>
+                        <span class="subject">Português II</span>
+                        <span class="professor">Novo Português</span>
+                    </td>
+                    <td>
+                        <span class="subject">Redes Comp.</span>
+                        <span class="professor">Antonio Mendes</span>
+                    </td>
+                    <td>
+                        <span class="subject">Filosofia</span>
+                        <span class="professor">Thiago Fonseca</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>22:15<br>23:00</td>
+                    <td>
+                        <span class="subject">Banco de Dados</span>
+                        <span class="professor">Ivaldo</span>
+                    </td>
+                    <td>
+                        <span class="subject">Português II</span>
+                        <span class="professor">Novo Português</span>
+                    </td>
+                    <td>
+                        <span class="subject">Redes Comp.</span>
+                        <span class="professor">Antonio Mendes</span>
+                    </td>
+                    <td>
+                        <span class="subject">Filosofia</span>
+                        <span class="professor">Thiago Fonseca</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+        <!-- ========== 3º ANO ========== -->
+<div class="table-wrapper">
+    <h2 class="year-title">HORÁRIO DA TURMA 3º ANO</h2>
+    
+    <div class="observations-box">
+        <h3>📌 Observações:</h3>
+        <p>Responsável: Coordenação</p>
+    </div>
+
+    <div class="table-responsive">
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>19:00<br>19:45</td>
+                    <td>
+                        <span class="subject">Prog. Internet</span>
+                        <span class="professor">Ivaldo</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                    <td>
+                        <span class="subject">Programação</span>
+                        <span class="professor">Antonio Mendes</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>19:45<br>20:30</td>
+                    <td>
+                        <span class="subject">Prog. Internet</span>
+                        <span class="professor">Ivaldo</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                    <td>
+                        <span class="subject">Manut. Comp.</span>
+                        <span class="professor">Paulo Mannini</span>
+                    </td>
+                    <td>
+                        <span class="subject">Programação</span>
+                        <span class="professor">Antonio Mendes</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>20:30<br>21:15</td>
+                    <td>
+                        <span class="subject">Prog. Internet</span>
+                        <span class="professor">Ivaldo</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                    <td>
+                        <span class="subject">BD Avançado</span>
+                        <span class="professor">Solange</span>
+                    </td>
+                    <td>
+                        <span class="empty-cell">—</span>
+                    </td>
+                    <td>
+                        <span class="subject">Prog. Web II</span>
+                        <span class="professor">Nelson Paz</span>
+                    </td>
+                </tr>
+                <!-- INTERVALO SUTIL -->
+                <tr style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 4px solid #2196F3;">
+                    <td colspan="6" style="padding: 8px; text-align: center; font-size: 0.85rem; color: #1565c0; font-weight: 600; letter-spacing: 1px;">
+                        ⏸️ INTERVALO (15 minutos)
+                    </td>
+                </tr>
+                <tr>
+                    <td>21:30<br>22:15</td>
+                    <td>
+                        <span class="subject">Português III</span>
+                        <span class="professor">Novo Português</span>
+                    </td>
+                    <td>
+                        <span class="subject">Matemática III</span>
+                        <span class="professor">Jeanna</span>
+                    </td>
+                    <td>
+                        <span class="subject">Física</span>
+                        <span class="professor">Elifas</span>
+                    </td>
+                    <td>
+                        <span class="subject">BD Avançado</span>
+                        <span class="professor">Solange</span>
+                    </td>
+                    <td>
+                        <span class="subject">Prog. Web II</span>
+                        <span class="professor">Nelson Paz</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>22:15<br>23:00</td>
+                    <td>
+                        <span class="subject">Português III</span>
+                        <span class="professor">Novo Português</span>
+                    </td>
+                    <td>
+                        <span class="subject">Matemática III</span>
+                        <span class="professor">Jeanna</span>
+                    </td>
+                    <td>
+                        <span class="subject">Física</span>
+                        <span class="professor">Elifas</span>
+                    </td>
+                    <td>
+                        <span class="subject">BD Avançado</span>
+                        <span class="professor">Solange</span>
+                    </td>
+                    <td>
+                        <span class="subject">Prog. Web II</span>
+                        <span class="professor">Nelson Paz</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+        <!-- Botão Voltar -->
+        <div class="btn-container">
+            <a href="index.html" class="back-btn">← Voltar para a Página Inicial</a>
+        </div>
+    </div>
+
+    <script>
+        // Menu mobile
+        function toggleMenu() {
+            const nav = document.querySelector('.nav');
+            const toggle = document.querySelector('.mobile-toggle');
+            nav.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
+
